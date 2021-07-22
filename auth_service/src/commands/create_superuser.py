@@ -3,9 +3,6 @@ import getpass
 import click
 from flask import Blueprint, current_app
 
-from models import User
-from core import db
-
 
 usersbp = Blueprint('users', __name__)
 

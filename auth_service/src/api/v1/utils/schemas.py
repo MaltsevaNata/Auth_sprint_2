@@ -1,7 +1,6 @@
 from core import ma
 
-# from flask import current_app
-from marshmallow import ValidationError, fields, validate, validates
+from marshmallow import fields, validate
 
 
 class SignUpSchema(ma.Schema):

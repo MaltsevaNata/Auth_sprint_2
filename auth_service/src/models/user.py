@@ -96,8 +96,8 @@ class UserManager:
 
     @catch_validation_errors
     def update_user(self, user, data):
-
-        #validated_data = self.schema_class().load(data)
+        # TODO: Fix this
+        # validated_data = self.schema_class().load(data)
 
         for key, value in data.items():
             setattr(user, key, value)

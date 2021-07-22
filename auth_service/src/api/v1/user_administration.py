@@ -1,18 +1,18 @@
-import pyotp
-from flask import jsonify, request, current_app, redirect, render_template, url_for
+from flask import jsonify, request, current_app, render_template, redirect, url_for
 from flask_jwt_extended import (create_access_token, create_refresh_token,
                                 get_jwt_identity, jwt_required)
 from flask_jwt_extended.utils import get_jwt
 
 from app import redis
 from core import db, Config, jwt
-from models import RefreshToken, User, LoginHistory
+from models import RefreshToken, User, LoginHistory, Role
 
 from .api_bp import bp
-from .errors import bad_request, unauthorized
+from .errors import unauthorized
+from .utils import schemas
 from .utils.decorators import validate_request
-from .utils.schemas import SignUpSchema, UpdateUserSchema, ChangePasswordSchema, SignInSchema, SignOutSchema
 from .utils.auth_user import auth_user
+from .two_fa import initial_sync
 
 
 @jwt.token_in_blocklist_loader
@@ -32,73 +32,26 @@ def check_if_token_is_revoked(jwt_header, jwt_payload):
     return token_in_redis is not None
 
 
-@bp.route("/sign_up", methods=["POST"])
-@validate_request(schema=SignUpSchema)
-def sign_up(data):
-    """
-    Creates user instance in database
-    """
-    user = current_app.user_manager.create_user(**data)
-    return jsonify(user.as_dict()), 201
-
-
-@bp.route("/initial_sync/<string:user_id>")
-def initial_sync(user_id: str):
-    """
-    Generate key and associate it with the user
-    """
-    secret = pyotp.random_base32()
-    user = current_app.user_manager.get_by_id(user_id)
-    user.totp_secret = secret
-    user.save()
-    totp = pyotp.TOTP(secret)
-    provisioning_url = totp.provisioning_uri(name=user_id + '@praktikum.ru', issuer_name='Awesome Auth app')
-    return render_template("sync_template.html", url=provisioning_url, id=user_id)
-
-
-@bp.route("/sync/<string:user_id>", methods=["POST"])
-def sync(user_id: str):
-    user = current_app.user_manager.get_by_id(user_id)
-    secret = user.totp_secret
-    print(f"""Got secret: {secret}""")
-    totp = pyotp.TOTP(secret)
-    print(f"""Expected code: {totp.now()}""")
-    # Верифицируем полученный от пользователя код
-    code = request.form['code']
-    print(f"""Got code: {code}""")
-    if not totp.verify(code):
-        return 'Неверный код'
-    user.is_verified = True
-    user.save()
-    return auth_user(user)
-
-
-@bp.route("/check/<string:user_id>", methods=["POST"])
-def check(user_id: str):
-    user = current_app.user_manager.get_by_id(user_id)
-    if not user.is_verified:
-        return redirect(url_for('.sign_in'))
-
-    code = request.form['code']
-    secret = user.totp_secret
-    totp = pyotp.TOTP(secret)
-    print(f"""Expected code: {totp.now()}""")
-    # Верифицируем полученный от пользователя код
-    print(f"""Got code: {code}""")
-
-    if not totp.verify(code):
-        return jsonify(msg="Неверный код")
-
-    return auth_user(user)
-
-
 @bp.route("/", methods=["GET"])
 def base():
     return render_template("base_page.html")
 
 
+@bp.route("/sign_up", methods=["POST"])
+@validate_request(schema=schemas.SignUpSchema)
+def sign_up(data):
+    """
+    Creates user instance in database
+    """
+    user = current_app.user_manager.create_user(**data)
+    default_role = Role.query.filter_by(default=True).first()
+    if default_role:
+        current_app.user_manager.add_role(user, default_role.name)
+    return jsonify(user.as_dict()), 201
+
+
 @bp.route("/sign_in", methods=["POST"])
-@validate_request(schema=SignInSchema)
+@validate_request(schema=schemas.SignInSchema)
 def sign_in(data):
     """
     Checks credentials, performs 2FA and generates tokens
@@ -117,7 +70,7 @@ def sign_in(data):
 
 @bp.route("/sign_out", methods=["POST"])
 @jwt_required()
-@validate_request(schema=SignOutSchema)
+@validate_request(schema=schemas.SignOutSchema)
 def sign_out(data):
     """
     Removes current refresh token for user
@@ -198,15 +151,13 @@ def get_role():
 # partial user update
 @bp.route("/user/update", methods=["PATCH"])
 @jwt_required()
-@validate_request(schema=UpdateUserSchema)
+@validate_request(schema=schemas.UpdateUserSchema)
 def update_user(data):
     """
     Updates user information: email, username, first name, last name optionally
     """
     identity = get_jwt_identity()
-    print(identity)
     user = User.query.get_or_404(identity)
-    print(user)
 
     updated_user = current_app.user_manager.update_user(user, data)
 
@@ -215,7 +166,7 @@ def update_user(data):
 
 @bp.route("/user/change_password", methods=["POST"])
 @jwt_required()
-@validate_request(schema=ChangePasswordSchema)
+@validate_request(schema=schemas.ChangePasswordSchema)
 def change_password(data):
     """
     Saves the new password hash. We expect that after changing password, the "Sign out all" request will be sent
