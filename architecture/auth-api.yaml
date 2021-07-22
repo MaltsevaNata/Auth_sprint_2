@@ -1,0 +1,277 @@
+swagger: '2.0'
+info:
+  description: API documentation for Auth service
+  title: Auth API
+  version: "1.1"
+basePath: "/api/v1/auth"
+paths:
+  /authenticate:
+    get:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successfully authenticated
+          schema:
+            $ref: '#/definitions/Message'
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: Checking authentication token
+  /signup:
+    post:
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: false
+          schema:
+            $ref: '#/definitions/RegisterParameters'
+      produces:
+        - application/json
+      responses:
+        '201':
+          description: Successfully created user
+          schema:
+            $ref: '#/definitions/Message'
+        '400':
+          description: Invalid input parameters
+        '500':
+          description: Server error
+      summary: Creating new user
+  /signin:
+    post:
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/LoginParameters'
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successfully logged in
+          schema:
+            $ref: '#/definitions/TokenPair'
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: User logging in
+  /logout:
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successfully logged out
+          schema:
+            $ref: '#/definitions/Message'
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: User logging out
+  /logout_all:
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successfully logged out
+          schema:
+            $ref: '#/definitions/Message'
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: User logging out on every device
+  /user/update:
+    post:
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/RegisterParameters'
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successfully updated
+          schema:
+            $ref: '#/definitions/Message'
+        '400':
+          description: Invalid input parameters
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: Changing login or email
+  /user/change_password:
+    post:
+      consumes:
+        - application/json
+      parameters:
+        - in: body
+          name: body
+          required: true
+          schema:
+            $ref: '#/definitions/ChangePasswordParameters'
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successfully changed password
+          schema:
+            $ref: '#/definitions/Message'
+        '400':
+          description: Invalid input parameters
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: Changing password
+  /refresh:
+    post:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      responses:
+        '200':
+          description: Successfully refreshed tokens
+          schema:
+            $ref: '#/definitions/TokenPair'
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: Refreshing access and refresh tokens
+  /history:
+    get:
+      consumes:
+        - application/json
+      produces:
+        - application/json
+      parameters:
+        - name: start_date
+          in: query
+          required: false
+          type: string
+          format: date
+        - name: end_date
+          in: query
+          required: false
+          type: string
+          format: date
+      responses:
+        '200':
+          description: Login Logs returned
+          schema:
+            $ref: '#/definitions/LoginHistory'
+        '401':
+          description: Unauthorized request
+          schema:
+            $ref: '#/definitions/Message'
+        '500':
+          description: Server error
+      summary: Getting log in history
+definitions:
+  LoginHistoryRecord:
+      type: object
+      properties:
+        ip_addr:
+          type: string
+          format: ipv4
+          example: 1.2.3.4
+        user_agent:
+          type: string
+          example: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:47.0) Gecko/20100101 Firefox/47.0
+        datetime:
+          type: string
+          format: date-time
+          example: 2021-03-29T09:12:33.001Z
+  LoginHistory:
+      type: array
+      items:
+        $ref: '#/definitions/LoginHistoryRecord'
+  ChangePasswordParameters:
+    properties:
+      password:
+        minLength: 8
+        type: string
+      new_password:
+        minLength: 8
+        type: string
+    required:
+      - password
+      - new_password
+    type: object
+  LoginParameters:
+    properties:
+      password:
+        minLength: 8
+        type: string
+      username:
+        minLength: 5
+        type: string
+    required:
+      - password
+      - username
+    type: object
+  Message:
+    properties:
+      msg:
+        type: string
+    type: object
+  RegisterParameters:
+    properties:
+      email:
+        type: string
+        format: email
+      password:
+        minLength: 8
+        type: string
+      username:
+        minLength: 5
+        type: string
+    required:
+      - email
+      - password
+      - username
+    type: object
+  TokenPair:
+    properties:
+      access_token:
+        type: string
+      refresh_token:
+        type: string
+    type: object
