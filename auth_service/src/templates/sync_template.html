@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+<canvas id="qr"></canvas>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrious/4.0.2/qrious.min.js"></script>
+<script>
+  (function () {
+    var qr = new QRious({
+      element: document.getElementById('qr'),
+      value: '{{url}}'
+    });
+  })();
+</script>
+<p>Просканируйте QR-код с помощью TOTP-приложения и введите код</p>
+<form method="post" action="/api/v1/sync/{{id}}">
+    <input required name="code">
+    <button type="submit">Синхронизация</button>
+</form>
+</body>
+</html>

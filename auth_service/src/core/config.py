@@ -10,10 +10,10 @@ basedir = Path(__file__).parent.parent
 
 class Config(object):
     # App
-    SECRET_KEY: str = os.environ["SECRET_KEY"]
+    SECRET_KEY: str = "aaa"
 
     # Database
-    SQLALCHEMY_DATABASE_URI: str = os.environ.get("DATABASE_URL", "postgresql://user:password@localhost:5432/auth")
+    SQLALCHEMY_DATABASE_URI: str = "postgresql://user:password@localhost:5432/auth"
 
     SQLALCHEMY_TRACK_MODIFICATIONS: bool = False
 
@@ -22,7 +22,7 @@ class Config(object):
     JWT_ACCESS_TOKEN_EXPIRES: int = int(os.environ.get('JWT_ACCESS_TOKEN_EXPIRES', 15 * 60))
 
     # Redis
-    REDIS_HOST: str = os.environ.get('REDIS_HOST', 'localhost')
+    REDIS_HOST: str = 'localhost'
     REDIS_PORT: int = os.environ.get('REDIS_PORT', 6379)
     REDIS_TTL: timedelta = timedelta(minutes=16)
     REDIS_EXTENDED_TTL: timedelta = timedelta(days=366)

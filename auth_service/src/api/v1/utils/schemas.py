@@ -22,10 +22,11 @@ class SignInSchema(ma.Schema):
 
 
 class UpdateUserSchema(ma.Schema):
-    username = fields.String()
-    email = fields.String()
-    first_name = fields.String()
-    last_name = fields.String()
+    username = fields.String(required=False)
+    email = fields.String(required=False)
+    first_name = fields.String(required=False)
+    last_name = fields.String(required=False)
+    active_2FA = fields.Boolean(required=False)
 
 
 class ChangePasswordSchema(ma.Schema):

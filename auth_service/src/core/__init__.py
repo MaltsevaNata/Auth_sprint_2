@@ -15,7 +15,7 @@ jwt = JWTManager()
 def create_app(config_class=Config):
 
     # App configs
-    app = Flask(__name__)
+    app = Flask(__name__, template_folder="../templates")
     app.config.from_object(config_class)
 
     # Initialize extensions

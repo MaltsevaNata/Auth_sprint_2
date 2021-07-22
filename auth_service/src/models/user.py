@@ -18,6 +18,9 @@ class User(ModelTimeStamped):
     last_name = db.Column(db.String, nullable=True)
     email = db.Column(db.String, nullable=True)
     roles = db.relationship("Role", secondary=UserRole, back_populates="users")
+    active_2FA = db.Column(db.Boolean, default=True)
+    is_verified = db.Column(db.Boolean, default=False)
+    totp_secret = db.Column(db.String, nullable=True)
 
     def __repr__(self):
         return f"<User {self.username} {self.roles}>"
@@ -33,6 +36,8 @@ class User(ModelTimeStamped):
     def as_dict(self):
         columns = dict(self.__table__.columns)
         columns.pop("password_hash")
+        columns.pop("is_verified")
+        columns.pop("totp_secret")
         return {c: getattr(self, c) for c in columns}
 
     def check_password(self, password):
@@ -41,6 +46,14 @@ class User(ModelTimeStamped):
     def get_roles(self):
         roles = [role.name for role in self.roles]
         return roles
+
+    def activate_2fa(self):
+        self.active_2FA = True
+        self.save()
+
+    def deactivate_2fa(self):
+        self.active_2FA = False
+        self.save()
 
     def save(self):
         """Save the current instance."""
@@ -84,13 +97,12 @@ class UserManager:
     @catch_validation_errors
     def update_user(self, user, data):
 
-        validated_data = self.schema_class().load(data)
+        #validated_data = self.schema_class().load(data)
 
-        for key, value in validated_data.items():
+        for key, value in data.items():
             setattr(user, key, value)
 
         user.save()
-
         return user
 
     def add_role(self, user, new_role):
