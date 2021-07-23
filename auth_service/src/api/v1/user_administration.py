@@ -12,7 +12,6 @@ from .errors import unauthorized
 from .utils import schemas
 from .utils.decorators import validate_request
 from .utils.auth_user import auth_user
-from .two_fa import initial_sync
 
 
 @jwt.token_in_blocklist_loader

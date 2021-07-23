@@ -1,6 +1,6 @@
-from core import ma
-
 from marshmallow import fields, validate
+
+from core import ma
 
 
 class SignUpSchema(ma.Schema):
