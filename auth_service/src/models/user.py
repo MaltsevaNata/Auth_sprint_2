@@ -18,7 +18,7 @@ class User(ModelTimeStamped):
     last_name = db.Column(db.String, nullable=True)
     email = db.Column(db.String, nullable=True)
     roles = db.relationship("Role", secondary=UserRole, back_populates="users")
-    active_2FA = db.Column(db.Boolean, default=True)
+    active_2FA = db.Column(db.Boolean, default=False)
     is_verified = db.Column(db.Boolean, default=False)
     totp_secret = db.Column(db.String, nullable=True)
 
