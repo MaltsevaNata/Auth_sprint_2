@@ -4,9 +4,9 @@ from marshmallow import ValidationError
 
 from core import db
 from models import Role, User
-from ..api_bp import bp
-from ..utils import schemas
-from ..utils.decorators import superuser_required, validate_request
+from .api_bp import bp
+from .utils import schemas
+from .utils.decorators import superuser_required, validate_request
 
 
 @bp.route("/roles")
