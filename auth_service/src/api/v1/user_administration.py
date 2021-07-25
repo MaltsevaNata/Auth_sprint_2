@@ -10,7 +10,7 @@ from models import RefreshToken, User, LoginHistory, Role
 from .api_bp import bp
 from .errors import unauthorized
 from .utils import schemas
-from .utils.decorators import validate_request
+from .utils.decorators import validate_request, superuser_required
 from .utils.auth_user import auth_user
 
 
@@ -123,7 +123,7 @@ def refresh():
     return jsonify(access_token=access_token, refresh_token=refresh_token)
 
 
-@bp.route("/history", methods=["GET"])
+@bp.route("/user/history", methods=["GET"])
 @jwt_required()
 def get_login_history():
     """
@@ -133,18 +133,7 @@ def get_login_history():
     query = db.session.query(LoginHistory).filter(LoginHistory.user_id == user_id)
     history_logs = query.all()
 
-    return jsonify([log.serialize for log in history_logs])
-
-
-@bp.route("/get_role")
-@jwt_required()
-def get_role():
-    """Get current user's role
-    """
-    identity = get_jwt_identity()
-    user = User.query.get_or_404(identity)
-    roles = user.get_roles()
-    return jsonify(roles=roles)
+    return jsonify([log.to_dict() for log in history_logs])
 
 
 # partial user update
@@ -178,6 +167,17 @@ def change_password(data):
     return jsonify(msg="Changed password, please, sign out")
 
 
+@bp.route("/user/role")
+@jwt_required()
+def get_role():
+    """Get current user's role
+    """
+    identity = get_jwt_identity()
+    user = User.query.get_or_404(identity)
+    roles = user.get_roles()
+    return jsonify(roles=roles)
+
+
 @bp.route("/me")
 @jwt_required()
 def get_me():
@@ -190,13 +190,27 @@ def get_me():
     return jsonify(user_data)
 
 
-@bp.route("/users")
+@bp.route("/user/add_role", methods=["POST"])
 @jwt_required()
-def get_users():
-    """
-    Returns information about all users
-    """
-    users = User.query.all()
-    user_data = [user.as_dict() for user in users]
+@superuser_required
+@validate_request(schema=schemas.AddRoleSchema)
+def add_role(data):
+    user = User.query.filter_by(username=data.get("username")).first_or_404()
+    current_app.user_manager.add_role(user, data.get('rolename'))
+    return jsonify(msg='ok')
 
-    return jsonify(user_data)
+
+@bp.route("/user/remove_role", methods=["POST"])
+@jwt_required()
+@superuser_required
+@validate_request(schema=schemas.AddRoleSchema)
+def remove_role(data):
+    user = User.query.filter_by(username=data.get("username")).first_or_404()
+    current_app.user_manager.remove_role(user, data.get('rolename'))
+    return jsonify(msg='ok')
+
+
+@bp.route("/authorize")
+@jwt_required()
+def authorize():
+    return jsonify(roles=get_jwt().get("roles"))
