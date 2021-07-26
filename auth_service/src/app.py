@@ -8,9 +8,11 @@ redis = get_redis()
 
 app = create_app()
 
+
 @app.errorhandler(400)
 def handle_bad_request(exc):
     return bad_request(exc.description.messages)
+
 
 @app.route("/")
 def hello():
@@ -18,4 +20,4 @@ def hello():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

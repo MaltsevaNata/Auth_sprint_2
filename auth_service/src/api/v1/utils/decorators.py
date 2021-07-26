@@ -20,7 +20,12 @@ def validate_request(schema):
         @functools.wraps(f)
         def decorated_function(*args, **kwargs):
             try:
-                data = schema().load(request.json, unknown=EXCLUDE)
+                if request.json:
+                    data = schema().load(request.json, unknown=EXCLUDE)
+                elif request.form:
+                    data = schema().load(request.form, unknown=EXCLUDE)
+                else:
+                    return bad_request("Data not found")
             except ValidationError as err:
                 return bad_request(err.messages)
             return f(data, *args, **kwargs)

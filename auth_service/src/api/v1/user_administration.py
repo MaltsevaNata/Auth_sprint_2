@@ -1,8 +1,7 @@
-from flask import jsonify, request, current_app
+from flask import jsonify, request, current_app, render_template, redirect, url_for
 from flask_jwt_extended import (create_access_token, create_refresh_token,
                                 get_jwt_identity, jwt_required)
 from flask_jwt_extended.utils import get_jwt
-from marshmallow import ValidationError
 
 from app import redis
 from core import db, Config, jwt
@@ -11,7 +10,9 @@ from models import RefreshToken, User, LoginHistory, Role
 from .api_bp import bp
 from .errors import unauthorized
 from .utils import schemas
-from .utils.decorators import validate_request, superuser_required
+from .utils.decorators import validate_request
+from .utils.auth_user import auth_user
+from .two_fa import initial_sync
 
 
 @jwt.token_in_blocklist_loader
@@ -31,13 +32,17 @@ def check_if_token_is_revoked(jwt_header, jwt_payload):
     return token_in_redis is not None
 
 
+@bp.route("/", methods=["GET"])
+def base():
+    return render_template("base_page.html")
+
+
 @bp.route("/sign_up", methods=["POST"])
 @validate_request(schema=schemas.SignUpSchema)
-def sing_up(data):
+def sign_up(data):
     """
     Creates user instance in database
     """
-
     user = current_app.user_manager.create_user(**data)
     default_role = Role.query.filter_by(default=True).first()
     if default_role:
@@ -45,41 +50,22 @@ def sing_up(data):
     return jsonify(user.as_dict()), 201
 
 
-# sing in
 @bp.route("/sign_in", methods=["POST"])
 @validate_request(schema=schemas.SignInSchema)
 def sign_in(data):
     """
-    Checks credentials and generates tokens if they're valid
+    Checks credentials, performs 2FA and generates tokens
     """
     user = current_app.user_manager.get_by_username(data["username"])
-
     if not user or not user.check_password(data["password"]):
         return unauthorized("Unauthorized")
 
-    access_token = create_access_token(
-        identity=user.id,
-        additional_claims={
-            'roles': user.get_roles()
-        }
-    )
-    refresh_token = create_refresh_token(identity=user.id)
+    if user.is_active_2FA:
+        if not user.is_verified:
+            return redirect(url_for('.initial_sync', user_id=user.id))
+        return render_template("check_totp.html", message="", id=user.id)
 
-    db.session.add(RefreshToken(user_id=user.id, token=refresh_token))
-    # log to login history
-    db.session.add(
-        LoginHistory(
-            user_id=user.id,
-            user_agent=request.user_agent.string,
-            ip_addr=request.remote_addr)
-    )
-    db.session.commit()
-
-    redis.delete(f"{user.id}-soa")
-
-    return jsonify(access_token=access_token,
-                   refresh_token=refresh_token,
-                   msg="Signed in")
+    return auth_user(user)
 
 
 @bp.route("/sign_out", methods=["POST"])
@@ -213,90 +199,5 @@ def get_users():
     """
     users = User.query.all()
     user_data = [user.as_dict() for user in users]
-    
+
     return jsonify(user_data)
-
-
-@bp.route("/roles")
-@jwt_required()
-def get_roles():
-    roles = Role.query.all()
-    role_data = [role.as_dict() for role in roles]
-
-    return jsonify(role_data)
-
-
-@bp.route("/roles", methods=["POST"])
-@jwt_required()
-@superuser_required
-@validate_request(schema=schemas.CreateRoleSchema)
-def create_role(data):
-    role = Role.query.filter_by(name=data.get("name")).first()
-    if role:
-        raise ValidationError("name already exists.")
-
-    role = Role(name=data.get("name"), permissions=data.get("permissions"))
-    db.session.add(role)
-    db.session.commit()
-
-    return jsonify(role.as_dict())
-
-
-@bp.route("/roles/<id>", methods=["POST"])
-@jwt_required()
-@superuser_required
-@validate_request(schema=schemas.UpdateRoleSchema)
-def update_role(data, id):
-    role = Role.query.get_or_404(id)
-
-    default = data.get("default")
-
-    if default and not role.default:
-        previous_default_role = Role.query.filter_by(default=True).first()
-        setattr(previous_default_role, 'default', False)
-        db.session.add(previous_default_role)
-    else:
-        del data["default"]
-
-    for key, value in data.items():
-        setattr(role, key, value)
-
-    db.session.add(role)
-    db.session.commit()
-
-    return jsonify(role.as_dict())
-
-
-@bp.route("/roles/<id>", methods=["DELETE"])
-@jwt_required()
-@superuser_required
-def delete_role(id):
-    Role.query.filter_by(id=id).delete()
-    db.session.commit()
-    return jsonify(msg='ok')
-
-
-@bp.route("/user/add_role", methods=["POST"])
-@jwt_required()
-@superuser_required
-@validate_request(schema=schemas.AddRoleSchema)
-def add_role(data):
-    user = User.query.filter_by(username=data.get("username")).first_or_404()
-    current_app.user_manager.add_role(user, data.get('rolename'))
-    return jsonify(msg='ok')
-
-
-@bp.route("/user/remove_role", methods=["POST"])
-@jwt_required()
-@superuser_required
-@validate_request(schema=schemas.AddRoleSchema)
-def remove_role(data):
-    user = User.query.filter_by(username=data.get("username")).first_or_404()
-    current_app.user_manager.remove_role(user, data.get('rolename'))
-    return jsonify(msg='ok')
-
-
-@bp.route("/authorize")
-@jwt_required()
-def authorize():
-    return jsonify(roles=get_jwt().get("roles"))

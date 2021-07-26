@@ -1,7 +1,6 @@
 from core import ma
 
-# from flask import current_app
-from marshmallow import ValidationError, fields, validate, validates
+from marshmallow import fields, validate
 
 
 class SignUpSchema(ma.Schema):
@@ -22,10 +21,11 @@ class SignInSchema(ma.Schema):
 
 
 class UpdateUserSchema(ma.Schema):
-    username = fields.String()
-    email = fields.String()
-    first_name = fields.String()
-    last_name = fields.String()
+    username = fields.String(required=False)
+    email = fields.String(required=False)
+    first_name = fields.String(required=False)
+    last_name = fields.String(required=False)
+    is_active_2FA = fields.Boolean(required=False)
 
 
 class ChangePasswordSchema(ma.Schema):
