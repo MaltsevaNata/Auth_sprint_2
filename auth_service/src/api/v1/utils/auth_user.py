@@ -7,7 +7,12 @@ from models import RefreshToken, LoginHistory
 
 
 def auth_user(user):
-    access_token = create_access_token(identity=user.id)
+    access_token = create_access_token(
+        identity=user.id,
+        additional_claims={
+            'roles': user.get_roles()
+        }
+    )
     refresh_token = create_refresh_token(identity=user.id)
 
     db.session.add(RefreshToken(user_id=user.id, token=refresh_token))
