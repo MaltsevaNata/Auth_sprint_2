@@ -59,7 +59,7 @@ def sign_in(data):
     if not user or not user.check_password(data["password"]):
         return unauthorized("Unauthorized")
 
-    if user.active_2FA:
+    if user.is_active_2FA:
         if not user.is_verified:
             return redirect(url_for('.initial_sync', user_id=user.id))
         return render_template("check_totp.html", message="", id=user.id)

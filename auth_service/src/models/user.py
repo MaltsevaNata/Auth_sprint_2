@@ -18,7 +18,7 @@ class User(ModelTimeStamped):
     last_name = db.Column(db.String, nullable=True)
     email = db.Column(db.String, nullable=True)
     roles = db.relationship("Role", secondary=UserRole, back_populates="users")
-    active_2FA = db.Column(db.Boolean, default=False)
+    is_active_2FA = db.Column(db.Boolean, default=False)
     is_verified = db.Column(db.Boolean, default=False)
     totp_secret = db.Column(db.String, nullable=True)
 
@@ -35,10 +35,8 @@ class User(ModelTimeStamped):
 
     def as_dict(self):
         columns = dict(self.__table__.columns)
-        columns.pop("password_hash")
-        columns.pop("is_verified")
-        columns.pop("totp_secret")
-        return {c: getattr(self, c) for c in columns}
+        excluded = ("password_hash", "is_verified", "totp_secret")
+        return {c: getattr(self, c) for c in columns if c not in excluded}
 
     def check_password(self, password):
         return check_password_hash(self.password_hash, password)
@@ -48,11 +46,11 @@ class User(ModelTimeStamped):
         return roles
 
     def activate_2fa(self):
-        self.active_2FA = True
+        self.is_active_2FA = True
         self.save()
 
     def deactivate_2fa(self):
-        self.active_2FA = False
+        self.is_active_2FA = False
         self.save()
 
     def save(self):
