@@ -25,7 +25,7 @@ class UpdateUserSchema(ma.Schema):
     email = fields.String(required=False)
     first_name = fields.String(required=False)
     last_name = fields.String(required=False)
-    active_2FA = fields.Boolean(required=False)
+    is_active_2FA = fields.Boolean(required=False)
 
 
 class ChangePasswordSchema(ma.Schema):
