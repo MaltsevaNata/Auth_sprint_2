@@ -11,7 +11,7 @@ app = create_app()
 
 @app.errorhandler(400)
 def handle_bad_request(exc):
-    return bad_request(exc.description.messages)
+    return bad_request(exc.description)
 
 
 @app.route("/")

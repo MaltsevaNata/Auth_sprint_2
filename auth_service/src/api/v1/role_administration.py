@@ -1,5 +1,5 @@
-from flask import jsonify, current_app
-from flask_jwt_extended import jwt_required, get_jwt
+from flask import jsonify
+from flask_jwt_extended import jwt_required
 from marshmallow import ValidationError
 
 from core import db
@@ -34,7 +34,7 @@ def create_role(data):
     return jsonify(role.as_dict())
 
 
-@bp.route("/roles/<id>", methods=["POST"])
+@bp.route("/roles/<id>", methods=["PATCH"])
 @jwt_required()
 @superuser_required
 @validate_request(schema=schemas.UpdateRoleSchema)
@@ -67,28 +67,3 @@ def delete_role(id):
     db.session.commit()
     return jsonify(msg='ok')
 
-
-@bp.route("/user/add_role", methods=["POST"])
-@jwt_required()
-@superuser_required
-@validate_request(schema=schemas.AddRoleSchema)
-def add_role(data):
-    user = User.query.filter_by(username=data.get("username")).first_or_404()
-    current_app.user_manager.add_role(user, data.get('rolename'))
-    return jsonify(msg='ok')
-
-
-@bp.route("/user/remove_role", methods=["POST"])
-@jwt_required()
-@superuser_required
-@validate_request(schema=schemas.AddRoleSchema)
-def remove_role(data):
-    user = User.query.filter_by(username=data.get("username")).first_or_404()
-    current_app.user_manager.remove_role(user, data.get('rolename'))
-    return jsonify(msg='ok')
-
-
-@bp.route("/authorize")
-@jwt_required()
-def authorize():
-    return jsonify(roles=get_jwt().get("roles"))
