@@ -27,6 +27,13 @@ class Config(object):
     REDIS_TTL: timedelta = timedelta(minutes=16)
     REDIS_EXTENDED_TTL: timedelta = timedelta(days=366)
 
+    # Google
+    GOOGLE_CLIENT_SECRET_FILEPATH: str = \
+        os.environ.get(
+            'GOOGLE_CLIENT_SECRET_FILEPATH',
+            'env/client_secret_269469804172-79cdri9a4lb182ov9781n32bmimhn2bq.apps.googleusercontent.com.json'
+        )
+
     # Mail
     MAIL_SERVER: str = os.environ.get("MAIL_SERVER", "localhost")
     MAIL_PORT: int = os.environ.get("MAIL_PORT", 25)
