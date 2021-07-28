@@ -14,7 +14,9 @@ class Command(BaseCommand):
     help = 'Loads data from file db.sqlite to postgres'
 
     def handle(self, *args, **kwargs):
-        dsl = {'dbname': 'movies', 'user': 'postgres', 'password': 'password', 'host': 'movies_postgres', 'port': 5432}
+        dsl = {'dbname': os.environ.get('SQL_DATABASE', 'movies'), 'user': os.environ.get('SQL_USER', 'postgres'),
+               'password': os.environ.get('SQL_PASSWORD', 'password') , 'host': os.environ.get('SQL_HOST', 'movies_postgres'),
+               'port': os.environ.get('SQL_PORT', 5432)}
         path = os.path.realpath('./movies/management/commands/sqlite_to_postgres/db.sqlite')
         with sqlite3.connect(path) as sqlite_conn, psycopg2.connect(
                 **dsl, cursor_factory=DictCursor) as pg_conn:
