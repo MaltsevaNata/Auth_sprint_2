@@ -35,9 +35,9 @@ async def shutdown():
     await elastic.es.close()
 
 
-app.include_router(filmwork.router, prefix="/auth/v1/film", tags=["film"])
-app.include_router(genre.router, prefix="/auth/v1/genre", tags=["genre"])
-app.include_router(person.router, prefix="/auth/v1/person", tags=["person"])
+app.include_router(filmwork.router, prefix="/api/v1/film", tags=["film"])
+app.include_router(genre.router, prefix="/api/v1/genre", tags=["genre"])
+app.include_router(person.router, prefix="/api/v1/person", tags=["person"])
 
 if __name__ == "__main__":
     uvicorn.run(
