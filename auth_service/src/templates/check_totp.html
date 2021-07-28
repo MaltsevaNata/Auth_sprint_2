@@ -3,7 +3,7 @@
 <body>
     <p>{{message}}</p>
     <p>Введите код из TOTP-приложения</p>
-        <form method="post" action="/api/v1/sync/{{id}}">
+        <form method="post" action="/auth/v1/sync/{{id}}">
             <input required name="code">
             <button type="submit">Синхронизация</button>
         </form>
