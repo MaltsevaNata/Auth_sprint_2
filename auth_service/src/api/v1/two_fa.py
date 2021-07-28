@@ -34,23 +34,3 @@ def sync(user_id: str):
     user.is_verified = True
     user.save()
     return auth_user(user)
-
-
-@bp.route("/check/<string:user_id>", methods=["POST"])
-def check(user_id: str):
-    """
-    Asks verified user to enter totp key from mobile app
-    """
-    user = current_app.user_manager.get_by_id(user_id)
-    if not user.is_verified:
-        return redirect(url_for('.sign_in'))
-
-    code = request.form['code']
-    secret = user.totp_secret
-    totp = pyotp.TOTP(secret)
-
-    # Verify received code
-    if not totp.verify(code):
-        return jsonify(msg="Неверный код")
-
-    return auth_user(user)
