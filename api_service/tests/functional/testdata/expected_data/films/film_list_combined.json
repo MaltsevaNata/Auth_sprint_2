@@ -1,0 +1,214 @@
+[
+    {
+        "id": "39842852-f52d-43ff-afee-88733f4a54fb",
+        "title": "Star Wars: The Old Republic",
+        "description": "Set long before the Star Wars films, the Sith Empire returns to the galaxy to begin a war with the Galactic Republic. After some brutal battles, both sides stop fighting each other, but the peace is broken and the Empire and the Republic are soon at war again.",
+        "imdb_rating": 8.7,
+        "genres": [
+            {
+                "id": "4f883b0a-f6db-48a0-a01a-4a8f56c3ee4c",
+                "name": "Fantasy",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Grey Griffin",
+            "Bertie Carvel",
+            "Jo Wyatt",
+            "Tom Spackman"
+        ],
+        "directors": [
+            "James Ohlen"
+        ],
+        "writers": [
+            "Randy Begel",
+            "Jennifer Brandes Hepler",
+            "Ian Ryan",
+            "Rebecca Harwick",
+            "Mary Kirby",
+            "Drew Karpyshyn",
+            "Chris Hepler",
+            "Tyler Hitchings",
+            "Travis Greene",
+            "Alex Freed",
+            "Jessica Sliwinski",
+            "James B. Jones",
+            "Hall Hood",
+            "Web Content)",
+            "Daniel Erickson",
+            "Armand Constantine",
+            "Neil Pollner",
+            "Charles Boyd",
+            "Aaron de Orive",
+            "Rob Chestney",
+            "Cathleen Rootsaert"
+        ]
+    },
+    {
+        "id": "6384683f-4374-4084-9853-88b47c5c70fc",
+        "title": "Star Wars: Episode IV - A New Hope",
+        "description": "The Imperial Forces, under orders from cruel Darth Vader, hold Princess Leia hostage in their efforts to quell the rebellion against the Galactic Empire. Luke Skywalker and Han Solo, captain of the Millennium Falcon, work together with the companionable droid duo R2-D2 and C-3PO to rescue the beautiful princess, help the Rebel Alliance and restore freedom and justice to the Galaxy.",
+        "imdb_rating": 8.6,
+        "genres": [
+            {
+                "id": "4f883b0a-f6db-48a0-a01a-4a8f56c3ee4c",
+                "name": "Fantasy",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Harrison Ford",
+            "Carrie Fisher",
+            "Peter Cushing",
+            "Mark Hamill"
+        ],
+        "directors": [
+            "George Lucas"
+        ],
+        "writers": [
+            "George Lucas"
+        ]
+    },
+    {
+        "id": "783a1d48-2e82-43cd-8862-c81ed24c5395",
+        "title": "Star Trek: The Next Generation",
+        "description": "Set in the 24th century and decades after the adventures of the original crew of the starship Enterprise, this new series is the long-awaited successor to the original Star Trek (1966). Under the command of Captain Jean-Luc Picard, the all new Enterprise NCC 1701-D travels out to distant planets to seek out new life and to boldly go where no one has gone before.",
+        "imdb_rating": 8.6,
+        "genres": [
+            {
+                "id": "dcc117fc-5402-4948-9bfc-bbdc4648eb59",
+                "name": "Mystery",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Marina Sirtis",
+            "Jonathan Frakes",
+            "Patrick Stewart",
+            "LeVar Burton"
+        ],
+        "directors": [],
+        "writers": [
+            "Gene Roddenberry"
+        ]
+    },
+    {
+        "id": "423b95e6-40ff-479b-9953-51a80e0a66ea",
+        "title": "Star Fox 64",
+        "description": "You take on the role of Fox McCloud, the leader of the Star Fox team. 'Star Fox' is an elite group of fighter pilots that works as mercenaries for the Cornarian Army. Corneria is the home planet of the team, and also of Dr. Andross, a mad scientist who was responsible for the death of Fox's father five years after General Pepper, the leader of Corneria, exiled him (Andross) to the planet Venom, and the Star Fox team went to investigate the strange activity from the planet. Many years later, Andross arises as the emperor of Venom and the supreme ruler of an almost unstoppable military force and declares war on the entire Lylat System, starting with Corneria. General Pepper calls the team to action. The orders: protect the key planets of the Lylat System, infiltrate Venom, and stop Dr. Andross.",
+        "imdb_rating": 8.6,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Mike West",
+            "Lyssa Browne",
+            "Rick May",
+            "Jock Blaney"
+        ],
+        "directors": [
+            "Takao Shimizu"
+        ],
+        "writers": [
+            "Mitsuhiro Takano"
+        ]
+    },
+    {
+        "id": "1ddcfb1a-fd46-41a7-8414-921b6cce7bd0",
+        "title": "Star Wars: Jedi Knight II - Jedi Outcast",
+        "description": "You guide mercenary Kyle Katarn, who must stop the evil plot of a renegade Jedi by relearning his skills as a Jedi Knight.",
+        "imdb_rating": 8.6,
+        "genres": [
+            {
+                "id": "4f883b0a-f6db-48a0-a01a-4a8f56c3ee4c",
+                "name": "Fantasy",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            },
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Vanessa Marshall",
+            "Jeff Bennett",
+            "Billy Dee Williams",
+            "Mark Klastorin"
+        ],
+        "directors": [],
+        "writers": [
+            "Michael Stemmle",
+            "Eric Biessman"
+        ]
+    }
+]

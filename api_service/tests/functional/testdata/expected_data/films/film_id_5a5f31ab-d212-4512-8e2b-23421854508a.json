@@ -1,0 +1,36 @@
+{
+    "id": "5a5f31ab-d212-4512-8e2b-23421854508a",
+    "title": "The Star Wars Holiday Special",
+    "description": "It is Life Day, a holiday that is celebrated on Chewbacca's home planet Kashyyyk. Chewie and Han Solo are trying to get to the planet where Chewie's family is waiting for him, but the Empire is out searching for the Rebels, giving everyone a hard time. While we are waiting we get a look at the everyday life of a Wookiee family. We meet all the familiar characters from Star Wars: Episode IV - A New Hope (1977) and we are introduced to Boba Fett during a short cartoon. We also pay a visit to the Cantina and meet all the monsters again.",
+    "imdb_rating": 2.1,
+    "genres": [
+        {
+            "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+            "name": "Family",
+            "description": null
+        },
+        {
+            "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+            "name": "Sci-Fi",
+            "description": null
+        }
+    ],
+    "actors": [
+        "Harrison Ford",
+        "Anthony Daniels",
+        "Carrie Fisher",
+        "Mark Hamill"
+    ],
+    "directors": [
+        "Steve Binder",
+        "David Acomba"
+    ],
+    "writers": [
+        "Leonard Ripps",
+        "Rod Warren",
+        "George Lucas",
+        "Mitzie Welch",
+        "Bruce Vilanch",
+        "Pat Proft"
+    ]
+}

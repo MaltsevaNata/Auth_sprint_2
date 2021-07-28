@@ -1,0 +1,36 @@
+{
+    "id": "f92c6b11-3f73-4c3f-a9e3-85b1bb91284b",
+    "title": "Anything for a Pop Star",
+    "description": "The pop band Slavabody Disco Disco Boys announces that it will play in Brazil. Fans of the group, teenagers and best friends Gabi, Manu and Ritinha go out of their way to let their parents let them watch the show in another city.",
+    "imdb_rating": 4.7,
+    "genres": [
+        {
+            "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+            "name": "Comedy",
+            "description": null
+        },
+        {
+            "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+            "name": "Family",
+            "description": null
+        },
+        {
+            "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+            "name": "Music",
+            "description": null
+        }
+    ],
+    "actors": [
+        "Victor Aguiar",
+        "Maisa Silva",
+        "Klara Castanho",
+        "Mel Maia"
+    ],
+    "directors": [
+        "Bruno Garotti",
+        "Anita Barbosa()"
+    ],
+    "writers": [
+        "Thalita Rebouças"
+    ]
+}
