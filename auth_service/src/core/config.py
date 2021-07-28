@@ -38,6 +38,7 @@ class Config(object):
             'https://www.googleapis.com/auth/userinfo.email',
             'https://www.googleapis.com/auth/userinfo.profile'
         ]
+    MOCK_PASSWORD_LENGTH: int = os.environ.get('MOCK_PASSWORD_LENGTH', 64)
 
     # Mail
     MAIL_SERVER: str = os.environ.get("MAIL_SERVER", "localhost")

@@ -1,3 +1,6 @@
+import random
+import string
+
 from core import db, ma
 from core.decorators import catch_validation_errors
 from flask import current_app
@@ -127,3 +130,6 @@ class UserManager:
 
     def get_by_id(self, value):
         return self.model.query.filter_by(id=value).first()
+
+    def generate_password(self, size, chars=string.ascii_letters + string.punctuation + string.digits):
+        return ''.join(random.choice(chars) for _ in range(size))
