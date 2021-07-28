@@ -33,6 +33,11 @@ class Config(object):
             'GOOGLE_CLIENT_SECRET_FILEPATH',
             'env/client_secret_269469804172-79cdri9a4lb182ov9781n32bmimhn2bq.apps.googleusercontent.com.json'
         )
+    GOOGLE_CLIENT_SCOPES: List[str] = [
+            'openid',
+            'https://www.googleapis.com/auth/userinfo.email',
+            'https://www.googleapis.com/auth/userinfo.profile'
+        ]
 
     # Mail
     MAIL_SERVER: str = os.environ.get("MAIL_SERVER", "localhost")
