@@ -17,4 +17,6 @@ DJANGO_SUPERUSER_PASSWORD=password
 DJANGO_SUPERUSER_USERNAME=user
 DJANGO_SUPERUSER_EMAIL=user@email.com
 DJANGO_SETTINGS_MODULE=config.settings.production
-SECRET_KEY=6s(pz-hu3##6!9u6)g&pf4t%9)d-o3%ggxz0!&)b8gc0k_v3g0
+SECRET_KEY=secret
+
+AUTH_URL=auth_app:5000

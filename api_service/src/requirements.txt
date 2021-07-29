@@ -5,3 +5,4 @@ fastapi==0.63.0
 orjson==3.5.1
 uvicorn==0.13.4
 furl==2.1.2
+requests==2.26.0
