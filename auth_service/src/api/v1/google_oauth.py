@@ -4,7 +4,6 @@ from googleapiclient.discovery import build
 
 from core import Config
 from models import Role
-from models.google_user import GoogleUser
 from .api_bp import bp
 from .utils.auth_user import auth_user
 
@@ -35,9 +34,6 @@ def google_oauth2callback():
 
     authorization_response = request.url
 
-    # FIXME dev костыль, без него google ругается
-    authorization_response = authorization_response.replace('http://', 'https://')
-
     flow.fetch_token(authorization_response=authorization_response)
     credentials = flow.credentials
 
@@ -48,25 +44,15 @@ def google_oauth2callback():
     ).execute()
     email = result['emailAddresses'][0]['value']
 
-    google_user = GoogleUser.query.filter_by(email=email).first()
-    if not google_user:
-        user = current_app.user_manager.create_user(
-            username=email,
-            password=current_app.user_manager.generate_password(size=Config.MOCK_PASSWORD_LENGTH),
-            email=email
+    user = current_app.user_manager.get_by_google_email(email)
+    if not user:
+        user = current_app.user_manager.create_google_user(
+            google_email=email,
+            first_name=result['names'][0]['givenName'],
+            last_name=result['names'][0]['familyName']
         )
-        user.first_name = result['names'][0]['givenName']
-        user.last_name = result['names'][0]['familyName']
         default_role = Role.query.filter_by(default=True).first()
         if default_role:
             current_app.user_manager.add_role(user, default_role.name)
-
-        google_user = GoogleUser(email=user.email,
-                                 first_name=user.first_name,
-                                 last_name=user.last_name,
-                                 user_id=user.id)
-        google_user.save()
-
-    user = current_app.user_manager.get_by_id(google_user.user_id)
 
     return auth_user(user)

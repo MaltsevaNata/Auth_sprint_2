@@ -1,7 +1,7 @@
 import random
 import string
 
-from core import db, ma
+from core import db, ma, Config
 from core.decorators import catch_validation_errors
 from flask import current_app
 from marshmallow import EXCLUDE, ValidationError, validates
@@ -24,6 +24,7 @@ class User(ModelTimeStamped):
     is_active_2FA = db.Column(db.Boolean, default=False)
     is_verified = db.Column(db.Boolean, default=False)
     totp_secret = db.Column(db.String, nullable=True)
+    google_email = db.Column(db.String, nullable=True)
 
     def __repr__(self):
         return f"<User {self.username} {self.roles}>"
@@ -95,6 +96,28 @@ class UserManager:
 
         return user
 
+    def create_google_user(self, google_email, first_name, last_name):
+
+        self.schema_class().load(dict(
+            username=google_email,
+            email=google_email,
+            google_email=google_email,
+            first_name=first_name,
+            last_name=last_name
+        ))
+
+        user = self.model(
+            username=google_email,
+            email=google_email,
+            google_email=google_email,
+            first_name=first_name,
+            last_name=last_name
+        )
+        user.set_password(self.generate_password(size=Config.MOCK_PASSWORD_LENGTH))
+
+        user.save()
+        return user
+
     @catch_validation_errors
     def update_user(self, user, data):
         # TODO: Fix this
@@ -130,6 +153,9 @@ class UserManager:
 
     def get_by_id(self, value):
         return self.model.query.filter_by(id=value).first()
+
+    def get_by_google_email(self, value):
+        return self.model.query.filter_by(google_email=value).first()
 
     def generate_password(self, size, chars=string.ascii_letters + string.punctuation + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))

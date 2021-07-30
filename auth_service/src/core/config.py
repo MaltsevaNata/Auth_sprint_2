@@ -28,6 +28,7 @@ class Config(object):
     REDIS_EXTENDED_TTL: timedelta = timedelta(days=366)
 
     # Google
+    OAUTHLIB_INSECURE_TRANSPORT: int = os.environ.get('OAUTHLIB_INSECURE_TRANSPORT', 0)
     GOOGLE_CLIENT_SECRET_FILEPATH: str = os.environ.get('GOOGLE_CLIENT_SECRET_FILEPATH')
     GOOGLE_CLIENT_SCOPES: List[str] = [
             'openid',
