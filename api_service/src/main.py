@@ -1,13 +1,11 @@
 import logging
-import os
-
-import requests
 
 import aioredis
 import uvicorn
 from elasticsearch import AsyncElasticsearch
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import ORJSONResponse
+from httpx import AsyncClient
 
 from api.v1 import filmwork, genre, person
 from core import config
@@ -50,7 +48,8 @@ async def add_process_time_header(request: Request, call_next):
         # здесь нужно возвращать ответ для анонимного пользователя
         return Response(content="Anonymous user", status_code=401)
     base_url = "http://" + config.AUTH_URL
-    auth_answer = requests.get(url=f"{base_url}/auth/v1/authorize", headers=headers)
+    async with AsyncClient() as client:
+        auth_answer = await client.get(f"{base_url}/auth/v1/authorize", headers=dict(headers))
     if auth_answer.status_code == 200:
         data = auth_answer.json()
         if data["roles"]:  # здесь должна быть проверка роли, если просто юзер, то одни данные, если подписчик - другие
