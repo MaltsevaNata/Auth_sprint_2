@@ -16,15 +16,20 @@ def dump_datetime(value):
 
 
 class LoginHistory(ModelBase):
-    __tablename__ = 'login_history'
+    __tablename__ = 'login_history_master'
+    __table_args__ = {
+        'postgresql_partition_by': 'LIST (user_device_type)'
+    }
+
     user_id = db.Column(UUID(as_uuid=True), db.ForeignKey('user.id'), nullable=False)
     user_agent = db.Column(db.String, nullable=False)
     ip_addr = db.Column(db.String, nullable=True)
     timestamp = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
-    user_device_type = db.Column(db.Text, nullable=False, primary_key=True)
+    user_device_type = db.Column(db.Text, nullable=False, primary_key=True, unique=True)
 
     def __repr__(self):
         return f'<User {self.user_id} logged in {self.timestamp}>'
+
 
     @property
     def user_device(self):
