@@ -56,3 +56,4 @@ zope.interface==5.4.0
 pyotp==2.6.0
 flasgger==0.9.5
 apispec==4.7.1
+user-agents==2.2.0
