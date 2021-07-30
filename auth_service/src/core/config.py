@@ -28,11 +28,7 @@ class Config(object):
     REDIS_EXTENDED_TTL: timedelta = timedelta(days=366)
 
     # Google
-    GOOGLE_CLIENT_SECRET_FILEPATH: str = \
-        os.environ.get(
-            'GOOGLE_CLIENT_SECRET_FILEPATH',
-            'env/client_secret_269469804172-79cdri9a4lb182ov9781n32bmimhn2bq.apps.googleusercontent.com.json'
-        )
+    GOOGLE_CLIENT_SECRET_FILEPATH: str = os.environ.get('GOOGLE_CLIENT_SECRET_FILEPATH')
     GOOGLE_CLIENT_SCOPES: List[str] = [
             'openid',
             'https://www.googleapis.com/auth/userinfo.email',
