@@ -1,4 +1,4 @@
-import google_auth_oauthlib.flow
+from google_auth_oauthlib import flow as gauth_flow
 from flask import redirect, url_for, request, current_app
 from googleapiclient.discovery import build
 
@@ -11,7 +11,7 @@ from .utils.auth_user import auth_user
 
 @bp.route("/authorize/with_google")
 def authorize_with_google():
-    flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
+    flow = gauth_flow.Flow.from_client_secrets_file(
         Config.GOOGLE_CLIENT_SECRET_FILEPATH,
         scopes=Config.GOOGLE_CLIENT_SCOPES)
 
@@ -27,7 +27,7 @@ def authorize_with_google():
 @bp.route("/authorize/with_google/callback")
 def google_oauth2callback():
     state = request.args.get('state')
-    flow = google_auth_oauthlib.flow.Flow.from_client_secrets_file(
+    flow = gauth_flow.Flow.from_client_secrets_file(
         Config.GOOGLE_CLIENT_SECRET_FILEPATH,
         scopes=Config.GOOGLE_CLIENT_SCOPES,
         state=state)
