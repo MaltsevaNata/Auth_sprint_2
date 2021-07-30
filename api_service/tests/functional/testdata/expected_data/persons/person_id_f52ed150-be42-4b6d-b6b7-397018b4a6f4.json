@@ -1,0 +1,11 @@
+{
+    "id": "f52ed150-be42-4b6d-b6b7-397018b4a6f4",
+    "first_name": "George",
+    "last_name": "Nichols",
+    "role": [
+        "director"
+    ],
+    "film_ids": [
+        "cd2f9e66-9aa0-408c-8539-65b6d87fe52d"
+    ]
+}

@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  elastic:
+    container_name: tests_elastic
+    image: elasticsearch:7.12.0
+    ports:
+      - 9200:9200
+    environment:
+      - discovery.type=single-node
+
+  redis:
+    container_name: tests_redis
+    image: redis:6.2.1
+    ports:
+      - 6379:6379

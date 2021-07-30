@@ -1,0 +1,2822 @@
+[
+    {
+        "id": "7c963643-812b-4ca3-9800-ab330ca4a05d",
+        "title": "Justin Bieber: A Star Was Born",
+        "description": null,
+        "imdb_rating": 1.0,
+        "genres": [
+            {
+                "id": "43817153-eae0-4519-939e-0c3c81da6ed3",
+                "name": "Documentary",
+                "description": null
+            },
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Justin Bieber"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "b1674b63-4ff2-49f6-88f3-666dbd82a6c0",
+        "title": "Star Quest: The Odyssey",
+        "description": "As our world expands to include the entire galaxy everyone rushes to claim their own piece of this new world and thousands of colonies arise. With no core government, rogue colonies begin to wreak havoc and without a centralized army to protect the innocent peace is all but lost. Now at the end of mankind's greatest battle, empires will crumble, alliances will form, enemies will rise, and heroes will fall.",
+        "imdb_rating": 1.5,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "James Ray"
+        ],
+        "directors": [],
+        "writers": [
+            "Carlos Perez",
+            "Ted Chalmers"
+        ]
+    },
+    {
+        "id": "348901c7-bef2-421b-bbe6-8b5640f7f0c1",
+        "title": "Battle Star Wars",
+        "description": "When the leader of the evil Coalition threatens to destroy a Rebel planet for its resources, his daughter will have no choice but to join the Rebel side and fight for what is right.",
+        "imdb_rating": 1.6,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Aimee Stolte",
+            "Benedikt Sebastian",
+            "Justin Berti",
+            "Alyson Gorske"
+        ],
+        "directors": [
+            "James Thomas"
+        ],
+        "writers": [
+            "Jeremy M. Inman"
+        ]
+    },
+    {
+        "id": "ef864793-855c-4b37-ae2f-fdb93e52736c",
+        "title": "Amy Winehouse: Fallen Star",
+        "description": "A biography on the life of Amy Winehouse.",
+        "imdb_rating": 1.8,
+        "genres": [
+            {
+                "id": "57e624b2-1043-42d4-8181-f0515c177131",
+                "name": "Biography",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Sarah Rochelle"
+        ],
+        "directors": [],
+        "writers": [
+            "Rose Berkman"
+        ]
+    },
+    {
+        "id": "eaf0988d-8603-49f7-80be-79ab4597d921",
+        "title": "Chatur Singh Two Star",
+        "description": "After an incident at Dadar Railway Station, Mumbai's Police Commissioner Rajpal K. Sinha suspends bumbling police detective, Chatur Singh, but is compelled to reinstate him after no-one within his department wants to be assigned with the security of disgraced and arrested Agriculture Minister Y.Y. Singh, who, after feigning an illness, is hospitalized. Chatur and his deputy, Pappu Panther, accordingly attend to the hospital and screen everyone that goes to visit him, including his wife, Savitri, and Secretary, Sonia Verma. Shortly thereafter, Singh is assassinated, Sonia is arrested as a suspect and lodged in a cell and refuses to divulge any information. Chatur decides to let her escape so that he can follow her and find out who was behind this high-profile killing. Sonia does manage to escape but he is not quick enough to follow, and she ends up in Capetown. Chatur and Pappu must now travel there and not only locate and apprehend Sonia but also must try to investigate her involvement in her employer's assassination.",
+        "imdb_rating": 1.8,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            },
+            {
+                "id": "dcc117fc-5402-4948-9bfc-bbdc4648eb59",
+                "name": "Mystery",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Ameesha Patel",
+            "Anupam Kher",
+            "Sanjay Dutt",
+            "Satish Kaushik"
+        ],
+        "directors": [
+            "Ajay Chandhok"
+        ],
+        "writers": [
+            "Rumi Jaffery",
+            "Sai Kabir"
+        ]
+    },
+    {
+        "id": "9436b30d-15f4-4c08-b093-7b4eb6caac3d",
+        "title": "Star Force: Fugitive Alien II",
+        "description": "In this second film compiled from two episodes of a Japanese TV serial, Captain Joe, reformed interstellar marauder Ken and the rest of the crew of the Backus-3 set off to destroy an alien race's super-weapon, face off with Ken's vengeful ex-lover Rita and confront the sinister leader of the marauding Star Wolves.",
+        "imdb_rating": 1.9,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Miyuki Tanigawa",
+            "Tatsuya Azuma",
+            "Chôei Takahashi",
+            "Jô Shishido"
+        ],
+        "directors": [
+            "Kiyosumi Kuzakawa",
+            "Minoru Kanaya"
+        ],
+        "writers": [
+            "Bunzô Wakatsuki",
+            "Keiichi Abe"
+        ]
+    },
+    {
+        "id": "5a5f31ab-d212-4512-8e2b-23421854508a",
+        "title": "The Star Wars Holiday Special",
+        "description": "It is Life Day, a holiday that is celebrated on Chewbacca's home planet Kashyyyk. Chewie and Han Solo are trying to get to the planet where Chewie's family is waiting for him, but the Empire is out searching for the Rebels, giving everyone a hard time. While we are waiting we get a look at the everyday life of a Wookiee family. We meet all the familiar characters from Star Wars: Episode IV - A New Hope (1977) and we are introduced to Boba Fett during a short cartoon. We also pay a visit to the Cantina and meet all the monsters again.",
+        "imdb_rating": 2.1,
+        "genres": [
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Harrison Ford",
+            "Anthony Daniels",
+            "Carrie Fisher",
+            "Mark Hamill"
+        ],
+        "directors": [
+            "Steve Binder",
+            "David Acomba"
+        ],
+        "writers": [
+            "Leonard Ripps",
+            "Rod Warren",
+            "George Lucas",
+            "Mitzie Welch",
+            "Bruce Vilanch",
+            "Pat Proft"
+        ]
+    },
+    {
+        "id": "19a1ab3f-c516-440f-8cb0-48f729055af5",
+        "title": "Starmania. Österreich sucht den neuen Star",
+        "description": null,
+        "imdb_rating": 2.1,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Thomas Neuwirth",
+            "Gernot Pachernigg",
+            "Nadine Beiler",
+            "Arabella Kiesbauer"
+        ],
+        "directors": [],
+        "writers": [
+            "Mischa Zickler"
+        ]
+    },
+    {
+        "id": "f2a44dd4-5852-45ce-9459-59e562d3bf4e",
+        "title": "Confessions of an Action Star",
+        "description": "A 'mocumentary' on the rise and fall of Chip and Dales dancer turned martial arts action star, Francis Allen Sledgewick, AKA Frank Sledge. When fame and fortune caused Frank to lose his sense of what's truely important, he realised he's going to have to get in touch with his roots if there's ever going to be a comeback.",
+        "imdb_rating": 2.4,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "c6fdec57-601d-4af0-a0a5-0d2c62a39a83",
+                "name": "Musical",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Kelly Hu",
+            "Holmes Osborne",
+            "Carrie-Anne Moss",
+            "David Leitch"
+        ],
+        "directors": [
+            "Brad Martin"
+        ],
+        "writers": [
+            "David Leitch"
+        ]
+    },
+    {
+        "id": "5d25b654-c501-4545-a4d5-065fa7d42c2d",
+        "title": "Amateur Porn Star Killer 3: The Final Chapter",
+        "description": "Villainous voyeur Brandon (Shane Ryan) wreaks havoc and pure sexual violence on a poor young girl, Nikki (Regan Reece). Rather than lure her in like the first film, or gain her trust as a ...",
+        "imdb_rating": 2.4,
+        "genres": [
+            {
+                "id": "b728e110-3252-4024-8afc-ec8fee273a38",
+                "name": "Crime",
+                "description": null
+            },
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            },
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Regan Reece",
+            "Shane Ryan",
+            "Krystal Star",
+            "Deserae Struthers"
+        ],
+        "directors": [
+            "Shane Ryan"
+        ],
+        "writers": [
+            "Shane Ryan"
+        ]
+    },
+    {
+        "id": "64c6f703-e64f-4aa9-923e-5782ad829173",
+        "title": "Porn Star Zombies",
+        "description": "A group of adult film cast and crew members must discover what is causing their fellow stars to rabidly attack them.",
+        "imdb_rating": 2.4,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Keith Emerson",
+            "Josh Anderson",
+            "Joshua Cameron",
+            "Jamey Green"
+        ],
+        "directors": [
+            "Keith Emerson"
+        ],
+        "writers": [
+            "Keith Emerson"
+        ]
+    },
+    {
+        "id": "0ce53d67-3b93-46c7-b4bf-a1c6c4cc2b60",
+        "title": "Star Odyssey",
+        "description": "Earth is attacked by an intergalactic villain and his army of robotic androids.",
+        "imdb_rating": 2.5,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Yanti Somer",
+            "Gianni Garko",
+            "Chris Avram",
+            "Malisa Longo"
+        ],
+        "directors": [
+            "Alfonso Brescia"
+        ],
+        "writers": [
+            "Alfonso Brescia",
+            "Giacomo Mazzocchi"
+        ]
+    },
+    {
+        "id": "eaa10a82-5253-4e3d-b6b8-ce77b01d78d9",
+        "title": "Black Star and the Golden Bat",
+        "description": "A bunch of kids and their pet dog accidentally discover the lair of villain Black Star, who is kidnapping the world's top scientists to develop a secret weapon. Will Golden Bat, the superhero the kids idolize, be able to rescue them?",
+        "imdb_rating": 2.5,
+        "genres": [
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            }
+        ],
+        "actors": [],
+        "directors": [
+            "Heon-myeong Han"
+        ],
+        "writers": [
+            "Jung-heon Lee"
+        ]
+    },
+    {
+        "id": "c0e7aa27-6fd1-4020-8fcb-570866ef94b1",
+        "title": "Britney Spears: 'Star Baby' Scrapbook",
+        "description": null,
+        "imdb_rating": 2.6,
+        "genres": [
+            {
+                "id": "43817153-eae0-4519-939e-0c3c81da6ed3",
+                "name": "Documentary",
+                "description": null
+            },
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Britney Spears"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "f5d6044c-37d7-4162-9f19-c7bacec94102",
+        "title": "Morning Star",
+        "description": "In time of war, a man must survive to make a journey to fulfill a promise made and discover the truth. After a terrible battle, he sees his great friend perish, leaving him one request - that he visit the king, father of the deceased, to give him the news of his death. Stuck to the promise, the warrior part to the meeting with the king, who lost his only heir.",
+        "imdb_rating": 2.7,
+        "genres": [
+            {
+                "id": "4f883b0a-f6db-48a0-a01a-4a8f56c3ee4c",
+                "name": "Fantasy",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Mike Mitchell",
+            "Adrian Bouchet",
+            "Ivy Corbin",
+            "Daniel Vivian"
+        ],
+        "directors": [
+            "Luca Boni",
+            "Marco Ristori"
+        ],
+        "writers": [
+            "Luca Boni",
+            "Marco Ristori"
+        ]
+    },
+    {
+        "id": "12991e3a-a9be-4da7-8732-d5c82f29613f",
+        "title": "À la recherche de la nouvelle star",
+        "description": null,
+        "imdb_rating": 2.7,
+        "genres": [
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Jérôme Anthony",
+            "Benjamin Castaldi",
+            "Elsa Fayer",
+            "Dove Attia"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "8210989b-2344-4e3d-b645-4500f4916fa9",
+        "title": "Star Worms II: Attack of the Pleasure Pods",
+        "description": "Jessup, forced to hide his true identity, is imprisoned on a deadly and desolate planet, the Star Prison. banished to mine rabid rivers for the elusive Fire Gems, Jessup and his men must battle bands of derelict prisoners and fight the fatal fangs of the Star Worms in order to supply the Lords of the Evil Empire with the sacred source of their hedonistic hallucinogenic opiates.",
+        "imdb_rating": 2.7,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Taylor Gilbert",
+            "Jeff Munson",
+            "David O'Hara",
+            "Orly Oh"
+        ],
+        "directors": [
+            "Lin Sten"
+        ],
+        "writers": []
+    },
+    {
+        "id": "99782606-95c8-4d41-9e10-19e09571bf68",
+        "title": "Joan Crawford: Always the Star",
+        "description": "This glamorous and hugely popular actress raised herself from brutal poverty to Academy Award-winning stardom by guts, determination and hard work. During her fifty-year career, she made over eighty films. But her obsessive perfectionism led to the later caricature of coat-hanger-wielding harridan that even the adoration of fans could not counter. Still, she has endured as one of the most popular icons of the movies, an early role model to a million young women who aspired to her image of stylish magnetic power and unquestioned independence. She was born Lucille LeSueur on March 23, 1904 (or 1906) in San Antonio, Texas. Her father soon disappeared and she took the name of her stepfather, calling herself Billie Cassin. When Cassin, too, vanished, Billie did menial work to help her mother and brother survive. Ill-paid sales jobs bought dancing lessons and the clothes she needed to enter amateur contests. Then came a night-club contract as chorus girl - $25-a-week and eight routines a night. And so she made it into show-business, but the humiliations and insecurities of those early years would never entirely leave her. Spotted by an MGM scout, by 1925 she was under contract in Hollywood. She made the usual publicity appearaces and did Exhibition Dancing at night. Her vitality, charm and dancing talents earned her many admirers - including some powerful enough to advance her career, like William Haines, Paul Bern, Jackie Coogan, Sr. and Louis B. Mayer. After bit parts and a small role in the film Pretty Ladies, a studio-sponsored competition found her the name she at first hated: Joan Crawford. As Crawford's acting skills developed, she became known for her independence and her resilience despite some less-than-successful roles. Her vaguely pretty and plump early looks were soon replaced by the svelte, hard-boiled beauty of hollow-cheeks, thick brows and overpainted mouth that would be her permanent image. Her capacity to inspire and wear with flair the creations of the dress designer Adrian was legendary. But most of all, she was known for her hard work on the set. Joan Crawford's personal life was characterized equally by self-discipline and the determination to better herself, banishing forever her unhappy beginnings. Four husbands included actors Douglas Fairbanks, Jr, Franchot Tone, Phillip Terry and businessman Alfred Steele. Plagued by innumerable miscarriages, she adopted four children, one of whose account of Joan's unyielding perfectionism has succeded in blurring memories of the remarkable life and career of a Hollywood immortal. Among Joan Crawford's films from which clips are included: Sally, Irene and Mary, 1925; Our Dancing Daughters, 1928; Grand Hotel, 1932; Dancing Lady, 1933; The Gorgeous Hussy, 1936; The Women, 1939; A Woman's Face, 1941; Mildred Pierce, 1945; Humoresque, 1946; Possessed, 1947; Sudden Fear, 1952; Johnny Guitar, 1954 Whatever Happened to Baby Jane? 1962 and Strait Jacket, 1964.",
+        "imdb_rating": 2.7,
+        "genres": [
+            {
+                "id": "43817153-eae0-4519-939e-0c3c81da6ed3",
+                "name": "Documentary",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Cliff Robertson",
+            "Joan Crawford",
+            "Ben Cooper",
+            "Diane Baker"
+        ],
+        "directors": [
+            "Suzette Winter",
+            "Gene Feldman"
+        ],
+        "writers": [
+            "Suzette Winter",
+            "Gene Feldman"
+        ]
+    },
+    {
+        "id": "7981f778-9a9e-4df6-9a54-efd0cac8f0c3",
+        "title": "Star Trek: Captain Pike",
+        "description": "Tells a pre-Kirk story about what happened on Rigel VII prior to The Cage episode of the original Star Trek series. This is the story of Captain Pike when he first takes command of the Enterprise and his first mission aboard her.",
+        "imdb_rating": 2.8,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Eric Roberts",
+            "Chase Masterson",
+            "Ray Wise",
+            "Linda Park"
+        ],
+        "directors": [
+            "Todd Shawn"
+        ],
+        "writers": [
+            "Walter Doty",
+            "Gene Roddenberry",
+            "Todd Shawn"
+        ]
+    },
+    {
+        "id": "d307dd2d-edf1-4665-b039-7a5742b596b9",
+        "title": "I Am a Star",
+        "description": "A most successful Lithuanian artist duo of Monika and Mantas unexpectedly breaks up as Mantas decides of switching and becoming a rapper.",
+        "imdb_rating": 2.9,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Mantas Stonkus",
+            "Marius Cizauskas",
+            "Monika Pundziute",
+            "Rimante Valiukaite"
+        ],
+        "directors": [
+            "Robertas Kuliunas"
+        ],
+        "writers": [
+            "Dominykas Klajumas",
+            "Titas Laucius",
+            "Deividas Misiulis"
+        ]
+    },
+    {
+        "id": "867ead51-4495-4549-ae1d-91fc3c0b53da",
+        "title": "Confessions of an Action Star",
+        "description": "A 'mocumentary' on the rise and fall of Chip and Dales dancer turned martial arts action star, Francis Allen Sledgewick, AKA Frank Sledge. When fame and fortune caused Frank to lose his sense of what's truely important, he realised he's going to have to get in touch with his roots if there's ever going to be a comeback.",
+        "imdb_rating": 2.9,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "c6fdec57-601d-4af0-a0a5-0d2c62a39a83",
+                "name": "Musical",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "David Leitch",
+            "Kelly Hu",
+            "Holmes Osborne",
+            "Eric Roberts"
+        ],
+        "directors": [
+            "Brad Martin"
+        ],
+        "writers": [
+            "David Leitch"
+        ]
+    },
+    {
+        "id": "35cb064b-51d8-46c4-bb73-3c7c352e62ae",
+        "title": "Top star magazín",
+        "description": "Social magazine about famous people and news fro Czech celebrities.",
+        "imdb_rating": 2.9,
+        "genres": [
+            {
+                "id": "629459b8-f7cd-42df-9c28-b6d3eda7dcbb",
+                "name": "Talk-Show",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Gabriela Partysová",
+            "Jitka Moucková",
+            "Mahulena Bocanová",
+            "Michal Jagelka"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "a4c387f5-1e61-4538-833a-b1c1c86d3951",
+        "title": "Invasion of the Star Creatures",
+        "description": "A pair of comical soldiers (Robert Ball and Frankie Ray) investigate a mysterious crater in an atomic detonation area and discover several beautiful alien vixens (Dolores Reed and Gloria Victor) who plan to conquer the world using an army of vegetable monsters.",
+        "imdb_rating": 3.0,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Dolores Reed",
+            "Robert Ball",
+            "Gloria Victor",
+            "Frankie Ray"
+        ],
+        "directors": [
+            "Bruno VeSota"
+        ],
+        "writers": [
+            "Jonathan Haze"
+        ]
+    },
+    {
+        "id": "306eb820-bbad-4400-9a61-0a6155960a3d",
+        "title": "Star Raiders: The Adventures of Saber Raine",
+        "description": "Rocket ships, Rayguns, and Robots abound in this heart-pounding tale where the stellar adventurer Saber Raine is hired to guide three elite soldiers on a rescue mission to recover a prince and princess who have been abducted from their home world. The trail leads Saber and his allies to a planet deep within uncharted space that is inhabited by strange mutated creatures, leech-like desert marauders, renegade mercenaries, alien outcasts, and cybernetically enhanced soldiers that guard mysterious ruins of an empire long forgotten. Deep within the ruins, Sinjin, a sinister overlord freed from a cryogenic chamber that was his prison for many centuries, is now in league with the Quintari, a malevolent insectoid race known throughout the galaxy as the scourge. In possession of a powerful new energy source, Sinjin plots his revenge on the descendants of those who betrayed him in the past. Can our heroes complete their rescue mission and stop Sinijin from unleashing his fury on the universe? Find out in Star Raiders: The Adventures of Saber Raine!",
+        "imdb_rating": 3.0,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Brit Laree",
+            "Cynthia Rothrock",
+            "Casper Van Dien",
+            "Sara N. Salazar"
+        ],
+        "directors": [
+            "Mark Steven Grove"
+        ],
+        "writers": [
+            "Mark Steven Grove"
+        ]
+    },
+    {
+        "id": "cf3a9355-e1d4-4428-9739-33e073abfbb3",
+        "title": "Exclusiv - Das Star-Magazin",
+        "description": null,
+        "imdb_rating": 3.0,
+        "genres": [
+            {
+                "id": "7e96084f-1630-44c2-bb79-52521b45870f",
+                "name": "News",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Frauke Ludowig"
+        ],
+        "directors": [],
+        "writers": [
+            "Martina Taubert"
+        ]
+    },
+    {
+        "id": "fc4a0b31-7d94-4681-9830-72728c03d11e",
+        "title": "Star Hunter",
+        "description": "Star hunters are the space monsters who hunt helpless creatures for pleasure. One night couple of high school football players and their cheerleaders are returning home after the lost game....",
+        "imdb_rating": 3.1,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Kenn Scott",
+            "Rebecca Budig",
+            "Stella Stevens",
+            "Roddy McDowall"
+        ],
+        "directors": [
+            "Cole S. McKay",
+            "Fred Olen Ray"
+        ],
+        "writers": [
+            "R.J. Robertson",
+            "M.B. Dick",
+            "Mark Litton"
+        ]
+    },
+    {
+        "id": "1b43c916-cf98-46d2-8b33-939d81ecaef9",
+        "title": "Chasing the Star",
+        "description": "Three Magi Priests journey the unforgiving desert in search of the new born King.",
+        "imdb_rating": 3.1,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Terence Knox",
+            "Rance Howard",
+            "Johnny Rey Diaz",
+            "Yancy Butler"
+        ],
+        "directors": [
+            "Bret Miller"
+        ],
+        "writers": [
+            "DJ Perry"
+        ]
+    },
+    {
+        "id": "036eb27e-090b-4c7a-989b-881626e43cf0",
+        "title": "Star Academy",
+        "description": null,
+        "imdb_rating": 3.1,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Quentin Mosimann",
+            "Nikos Aliagas",
+            "Johnny Hallyday",
+            "Christophe Maé"
+        ],
+        "directors": [
+            "Jean-Jacques Amsellem"
+        ],
+        "writers": []
+    },
+    {
+        "id": "2ee9ee10-7834-4ae3-bddf-f4399ed8a756",
+        "title": "Nouvelle Star",
+        "description": null,
+        "imdb_rating": 3.2,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Benjamin Castaldi",
+            "André Manoukian",
+            "Dove Attia",
+            "Marianne James"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "3ea34c58-5ae4-4f79-9964-37840f7077e0",
+        "title": "Star Academy",
+        "description": "In this Flemish variation on the Pop idol format, would-be pop stars from the public at large are selected by progressive elimination while receiving general artist coaching and various specialist classes from showbiz professionals. The winner of the 'Academy' is to be launched for real, a shot at 'stardom'.",
+        "imdb_rating": 3.2,
+        "genres": [
+            {
+                "id": "5a8c42cb-e2da-43ad-ab3d-05337238d58f",
+                "name": "Game-Show",
+                "description": null
+            },
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Walter Grootaers",
+            "Paul Ambach",
+            "Louis Anaf",
+            "Elke Vanelderen"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "f329ebb1-6e61-455b-b28b-a63aac5eb74c",
+        "title": "Hannah Montana: Learn to Be a Pop Star",
+        "description": null,
+        "imdb_rating": 3.2,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Tatiana Fulmer",
+            "Maddie Rudow",
+            "Hannah Balzer"
+        ],
+        "directors": [
+            "Jamie Lustberg"
+        ],
+        "writers": [
+            "Amber Cahill",
+            "Jamie Lustberg"
+        ]
+    },
+    {
+        "id": "f6a8d7b1-65b5-450a-a406-ba622616234d",
+        "title": "Bucky Larson: Born to Be a Star",
+        "description": "Living in small town Iowa, Bucky Larson is a simple minded, uneducated, beaver toothed young man still living with his protective parents, Jeremiah and Debbie Larson. Initially saddened when he is fired from his job as a bagger at a supermarket, he eventually sees it as a sign that he is destined for greatness in some other field. Based on some information he learns, Bucky believes that destiny is to become a porn star, despite he being a virgin and only having recently learned what masturbation is. With his parents' blessing, Bucky hops on a bus to Los Angeles to make it big there as a porn star. He is taken under the wings of a few people in LA. On the professional side, he meets the reigning king of porn, Dick Shadow, who only sees in Bucky a laughing stock. But washed up porn director Miles Deep stumbles across what he sees as an untapped niche market for Bucky's limited talents. Miles has the challenge of trying to convince investors who only see in Bucky the antithesis of porn. On the personal side, Bucky befriends a young diner waitress Kathy McGee, who helps Bucky find a place to live - albeit with an insensitive oaf named Gary who only wants to get into Kathy's pants - and navigate general life in the big city. Kathy, however, is facing her own demons in working toward her destiny, those demons which Bucky hopes he can help her beat down.",
+        "imdb_rating": 3.2,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Nick Swardson",
+            "Christina Ricci",
+            "Stephen Dorff",
+            "Don Johnson"
+        ],
+        "directors": [
+            "Tom Brady"
+        ],
+        "writers": [
+            "Nick Swardson",
+            "Adam Sandler",
+            "Allen Covert"
+        ]
+    },
+    {
+        "id": "a490eeba-64b8-4a91-a498-7c7d3055e651",
+        "title": "Star Vehicle",
+        "description": "\"Star Vehicle\" follows the downward spiral of movie driver Donald Cardini, a self-professed movie buff with a penchant for explosive violence when provoked. Driving the stars of low-budget movies, along with their fragile egos, to and from locations in the middle of nowhere, pushes Don's buttons in all of the wrong directions. When Luke, the young and self-absorbed writer/director challenges Don's authority, murder and mayhem ensues. The movie's Scream Queen' starlet, Riversa Red, to her dismay finds herself the target of Don's obsession. With his encyclopedic knowledge of her \"body\" and body of work, Don worms his way onto Riversa's good side, no easy task. Not knowing whether to fear or friend Don, Riversa finds herself at the center of a cyclone with Luke and Don both vying for her attention. A mysterious Hotel Bellboy and an unknown \"watcher in the woods\" lend themselves to the growing suspense as the cast and crew hold-up at Forest Grove Lodge. After a couple of grueling days into the movie shoot, Don goes berserk, getting himself kicked off of the show. But letting go of Don doesn't come without a price. When he shows up the next day, 9 mm handgun in tow, the cast and crew are forced to act in Don's own home movie. Those who make a stand are dealt a deadly hand and those that await their fate wish they never stepped into the \"Star Vehicle\". Once the wheels of horror start rolling, there's no turning back.",
+        "imdb_rating": 3.2,
+        "genres": [
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Sindy Faraguna",
+            "Nathan Durec",
+            "Nick Windebank",
+            "Dan Ellis"
+        ],
+        "directors": [
+            "Ryan Nicholson"
+        ],
+        "writers": [
+            "Ryan Nicholson"
+        ]
+    },
+    {
+        "id": "86d5755c-96e7-43f5-8d00-7ebda7349ed0",
+        "title": "A Star Is Falling Upwards",
+        "description": null,
+        "imdb_rating": 3.3,
+        "genres": [
+            {
+                "id": "c6fdec57-601d-4af0-a0a5-0d2c62a39a83",
+                "name": "Musical",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Karel Gott",
+            "Jirí Sovák",
+            "Josef Somr",
+            "Jitka Molavcová"
+        ],
+        "directors": [
+            "Ladislav Rychman"
+        ],
+        "writers": [
+            "Václav Nývlt",
+            "Josef Kajetán Tyl",
+            "Ladislav Rychman",
+            "Jirí Staidl"
+        ]
+    },
+    {
+        "id": "ed5f2a79-7d5c-43cf-a561-ca84a9f3ff9e",
+        "title": "Star Wars: Wrath of the Mandalorian",
+        "description": "Years after the Clone Wars end, Darth Vader sends bounty hunter Boba Fett to Kashyyyk to track down the last of the Jedi. Fett, motivated by revenge for his father's death, proves effective - but he soon finds out a terrible truth about Vader while on the hunt that gives him a change of heart.",
+        "imdb_rating": 3.3,
+        "genres": [
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Steve Carroll",
+            "David Hankin",
+            "David W. Allen",
+            "Chris Brennan"
+        ],
+        "directors": [
+            "Kelly Dolen"
+        ],
+        "writers": [
+            "Kelly Dolen",
+            "Nathan Cross"
+        ]
+    },
+    {
+        "id": "97194414-4ca5-46d4-a525-702c1b86f6c8",
+        "title": "Meet Your Star",
+        "description": null,
+        "imdb_rating": 3.3,
+        "genres": [
+            {
+                "id": "cd604009-2feb-48eb-86bf-dfbb7f14cb25",
+                "name": "Romance",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Eric Benz",
+            "Gabriel Andrade",
+            "Melanie Wichterich",
+            "Thorsten Feller"
+        ],
+        "directors": [],
+        "writers": [
+            "Bob Konrad",
+            "Anja Lürenbaum"
+        ]
+    },
+    {
+        "id": "bacf1e52-f8af-4639-a462-903ab2033076",
+        "title": "Star Fish of 'Shark Tale'",
+        "description": null,
+        "imdb_rating": 3.3,
+        "genres": [
+            {
+                "id": "43817153-eae0-4519-939e-0c3c81da6ed3",
+                "name": "Documentary",
+                "description": null
+            },
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Jack Black",
+            "Bibo Bergeron",
+            "Bill Damaschke",
+            "Robert De Niro"
+        ],
+        "directors": [],
+        "writers": [
+            "Hope Manna"
+        ]
+    },
+    {
+        "id": "720ba933-e2f7-4a37-b61a-55430e8f0d78",
+        "title": "Puppy Star Christmas",
+        "description": "A song-filled new Air Bud 'Pup Star' movie that introduces four new pups to the family, who stow away on Santa's sleigh and find themselves trapped at the North Pole, trying to save the world's Christmas spirit.",
+        "imdb_rating": 3.4,
+        "genres": [
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Chloe Coleman",
+            "Tyreese Burnett",
+            "Oakley Bull",
+            "Diedrich Bader"
+        ],
+        "directors": [
+            "Robert Vince"
+        ],
+        "writers": [
+            "Piers Rae",
+            "Robert Vince"
+        ]
+    },
+    {
+        "id": "1287bac7-649f-4b4d-9778-51b018495640",
+        "title": "Star Slammer",
+        "description": "Two women who have been unjustly confined to a prison planet plot their escape, all the while having to put up with lesbian guards, crazed wardens and mutant rodents.",
+        "imdb_rating": 3.5,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Ross Hagen",
+            "Suzy Stokey",
+            "Marya Gant",
+            "Sandy Brooke"
+        ],
+        "directors": [
+            "Fred Olen Ray"
+        ],
+        "writers": [
+            "Miriam L. Preissel",
+            "Michael Sonye",
+            "Fred Olen Ray"
+        ]
+    },
+    {
+        "id": "5b933c5a-7816-4028-8144-35a1809f5399",
+        "title": "Star Crystal",
+        "description": "Set in 2032, as missions from Earth are being sent to explore Mars. After two groups of astronauts are mysteriously killed following the discovery of strange artefacts on the martian surface, the crew of the SC-37 go in to try and find out what happened. They soon learn what became of their predecessors when a bloodthirsty space monster begins lunching on members of the crew. Will any of them make it back to Earth alive?",
+        "imdb_rating": 3.5,
+        "genres": [
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            },
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Faye Bolt",
+            "Taylor Kingsley",
+            "C. Juston Campbell",
+            "John W. Smith"
+        ],
+        "directors": [
+            "Lance Lindsay"
+        ],
+        "writers": [
+            "Lance Lindsay",
+            "Eric Woster"
+        ]
+    },
+    {
+        "id": "b57d8158-16f0-4a32-811a-6fe45b3fbb91",
+        "title": "Frat Star",
+        "description": "\"Frat Star\" explores the alluring, superficial, manipulative, and dark world of Ivy League fraternity culture. An insecure, poor, and broken-hearted Nick enters freshman year with no interest in fraternities. This all changes when his old money roommate Billy convinces him to pledge.",
+        "imdb_rating": 3.5,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Chris Elliott",
+            "Justin Mark",
+            "Cathryn Dylan",
+            "Connor Lawrence"
+        ],
+        "directors": [
+            "Jena Serbu",
+            "Grant S. Johnson"
+        ],
+        "writers": [
+            "Grant S. Johnson"
+        ]
+    },
+    {
+        "id": "4fb1cd01-26fb-4981-a7d9-45f7e9086d5d",
+        "title": "The All Star Impressions Show",
+        "description": "Famous faces act out sketches impersonating other famous faces, and there is also an singing appearance by pop group JLS as themselves.",
+        "imdb_rating": 3.5,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Peter Dickson",
+            "Stephen Mulhern",
+            "Tony Blackburn",
+            "Diane Abbott"
+        ],
+        "directors": [
+            "John F.D. Northover"
+        ],
+        "writers": [
+            "Matthew Leys",
+            "Tony Cooke",
+            "Marc Blakewill",
+            "Tony Way",
+            "Steven Burge",
+            "Carl Carter",
+            "James Harris",
+            "Jane Lamacraft",
+            "Martin Trenaman"
+        ]
+    },
+    {
+        "id": "46110f62-ab76-4dd2-a2ef-4a9ddd42e9ee",
+        "title": "Star Academy",
+        "description": null,
+        "imdb_rating": 3.6,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Nikos Aliagas"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "f24da2be-2a5e-4252-bd44-7fe91e660873",
+        "title": "Star Leaf",
+        "description": "Some Highs Are Out of this World. Star Leaf is a sci-fi thriller about an extra-terrestrial form of marijuana discovered in the Olympic forests. The main character is a veteran of the Afghanistan war, and the film has PTSD and its treatment with cannabis as an underlying theme. Shot entirely on Washington's Olympic Peninsula, the movie stars Julian Gavilanes and Russell Hodgkinson of Sy-Fy's Z-Nation.",
+        "imdb_rating": 3.6,
+        "genres": [
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            },
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Richard Cranor",
+            "Kevin Jolly",
+            "Russell Hodgkinson",
+            "Julian Gavilanes"
+        ],
+        "directors": [
+            "Richard Cranor"
+        ],
+        "writers": [
+            "Richard Cranor",
+            "Hugh Berry"
+        ]
+    },
+    {
+        "id": "1b74d670-a5bf-4797-91bc-2331d511086a",
+        "title": "Amateur Porn Star Killer 2",
+        "description": "This sequel to Amateur Porn Star Killer. The film follows a deranged serial killer who poses as a filmmaker to lure women into his lair.",
+        "imdb_rating": 3.7,
+        "genres": [
+            {
+                "id": "b728e110-3252-4024-8afc-ec8fee273a38",
+                "name": "Crime",
+                "description": null
+            },
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Shane Ryan",
+            "Kai Lanette"
+        ],
+        "directors": [
+            "Shane Ryan"
+        ],
+        "writers": [
+            "Shane Ryan",
+            "Kai Lanette"
+        ]
+    },
+    {
+        "id": "92c13f20-88d0-4a90-8811-7a4dc19a3629",
+        "title": "She Likes Red Star",
+        "description": "Srba is graduating pupil and football fanatic, or more precise king of a street soccer, who plays even without others, in a winter, summer, rain or snow, while his grandma lights narrow backyard (so called small Maracana) with a flashlight. He wouldn't accept to become professional by no means and to play for money, rejecting offers of various scouts promising him a career in Spain, Greece, Germany, Turkey... main characters of Srba's school days are his best friends, Daca who is secretly in love with him ever since first grade, professors Hannibal and Darwin and Beki, new schoolmate to whom Srba fells in love - and she loves Red Star...",
+        "imdb_rating": 3.8,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Ana Stefanovic",
+            "Goran Jevtic",
+            "Danijela Vranjes",
+            "Gordan Kicic"
+        ],
+        "directors": [
+            "Marko Marinkovic"
+        ],
+        "writers": [
+            "Gordan Mihic"
+        ]
+    },
+    {
+        "id": "b7e4fbcc-057b-48a9-87e6-2e84fbd1df93",
+        "title": "Shaquille O'neal All-star Comedy Jam: Live from Sin City",
+        "description": "Shaquille O'Neal presents host Lavell Crawford (\"Breaking Bad,\" Mike and Dave Need Wedding Dates, and American Ultra) with special guests K-Dubb, Cocoa Brown, Donnell Rawlings, and ...",
+        "imdb_rating": 3.8,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Earthquake ",
+            "Lavell Crawford",
+            "Donnell Rawlings",
+            "Cocoa Brown"
+        ],
+        "directors": [
+            "Leslie Small"
+        ],
+        "writers": []
+    },
+    {
+        "id": "eae312c7-ec30-4c75-9113-b74c2aa01ba4",
+        "title": "Pup Star: World Tour",
+        "description": "PUP STAR is back, with an all-new movie that takes the popular singing dogs on trip around the world, where Tiny and friends find fantastic new songs and meet exciting new canine singers that prove music really is the universal language.",
+        "imdb_rating": 3.8,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "c6fdec57-601d-4af0-a0a5-0d2c62a39a83",
+                "name": "Musical",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Makenzie Moss",
+            "Brian Hull",
+            "Kaitlyn Maher",
+            "David DeLuise"
+        ],
+        "directors": [
+            "Robert Vince"
+        ],
+        "writers": [
+            "Robert Vince"
+        ]
+    },
+    {
+        "id": "4b2bd50f-bdb1-4c3a-96c1-0555247ad61f",
+        "title": "Fist of the North Star",
+        "description": "Based on a graphic novel, this apocalyptic adventure centers on a man who must reverse the cataclysmic conditions of his world.",
+        "imdb_rating": 3.9,
+        "genres": [
+            {
+                "id": "4f883b0a-f6db-48a0-a01a-4a8f56c3ee4c",
+                "name": "Fantasy",
+                "description": null
+            },
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Malcolm McDowell",
+            "Gary Daniels",
+            "Costas Mandylor",
+            "Downtown Julie Brown"
+        ],
+        "directors": [
+            "Tony Randel"
+        ],
+        "writers": [
+            "Tony Randel",
+            "Peter Atkins",
+            "Buronson ",
+            "Tetsuo Hara"
+        ]
+    },
+    {
+        "id": "46de3e37-edb7-4926-942d-b3e1d9def373",
+        "title": "Star Wars: The Last Jedi Cast Live Q&A",
+        "description": null,
+        "imdb_rating": 3.9,
+        "genres": [
+            {
+                "id": "629459b8-f7cd-42df-9c28-b6d3eda7dcbb",
+                "name": "Talk-Show",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Laura Dern",
+            "Domhnall Gleeson"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "326ec3a5-54a2-4bf5-af1e-f73271ba8394",
+        "title": "Super Star",
+        "description": null,
+        "imdb_rating": 3.9,
+        "genres": [
+            {
+                "id": "629459b8-f7cd-42df-9c28-b6d3eda7dcbb",
+                "name": "Talk-Show",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Lila Droutsa",
+            "Hristina Lambiri",
+            "Maria Ioannidou",
+            "Giannis Angelakis"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "7ed1ce46-5a6e-487f-9e0c-f268ddf71134",
+        "title": "Star Witness",
+        "description": null,
+        "imdb_rating": 4.0,
+        "genres": [
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Edward Albert",
+            "Ron Gilbert",
+            "Tuesday Knight",
+            "Meg Register"
+        ],
+        "directors": [
+            "Ulli Lommel"
+        ],
+        "writers": []
+    },
+    {
+        "id": "c281109c-24fe-4c42-a6a0-c0121b5076cf",
+        "title": "Star Trek: New Worlds",
+        "description": "New resource-rich planets have been formed on the borders of Federation, Romulan, and Klingon space. The three races have begun colonizing different parts of these planets, sooner or later they run into each other and battle for the fate of these new worlds.",
+        "imdb_rating": 4.0,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Michael Bell",
+            "Cam Clarke",
+            "Kevin Michael Richardson",
+            "Roger Jackson"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "b2c718fc-798d-4fb9-b782-7a07af334b21",
+        "title": "Star Wars: Threads of Destiny",
+        "description": "94 years after The Battle of Yavin, the New Republic has been resurrected and democracy once again rules the galaxy. The Jedi Order is reestablished on the planet Yavin 4, and has continued to train new Jedi Knights in the art of peace and justice. But all is not peaceful in this new world. With the fall of the Dark Empire, the ancient Skenvi Empire now comes out of the shadow to make its move. The Skenvi now oppose the New Republic for control over the galaxy with their aggressively growing empire. The Skenvi seek to seize control of all the galaxy's most valuable resources to cripple their enemies. And if a planet refuses to join them, they have been known to take very aggressive actions. Caught in between this struggle over the fate of the galaxy is the little planet of Coreign. The planet possesses a very powerful resource that would greatly favor the side that has access to it if a galactic war was to emerge. In its eagerness to gain access to Coreign's resources, the Skenvi Empire sends its most infamous negotiator, Lord Siege. He is a man who is known throughout the galaxy for seeing that the Skenvi Empire gets what it wants by all means necessary. The New Republic sends two of its Jedi ambassadors, Master Soran Darr and his padawan, Raven Darkham.",
+        "imdb_rating": 4.0,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Karl Lindqvist",
+            "Patrik Hont",
+            "Carolina Neurath",
+            "Stephanie Douglas Anderberg"
+        ],
+        "directors": [
+            "Rasmus Tirzitis"
+        ],
+        "writers": [
+            "Michael Banno",
+            "Jeffrey Long",
+            "Matthew Davis",
+            "Rasmus Tirzitis",
+            "Steven Parker"
+        ]
+    },
+    {
+        "id": "52907e02-e522-442e-9eb8-35faecf0b6e9",
+        "title": "Mr Black: Green Star",
+        "description": "In this exciting Chinese action flick, Mr. Black is back! After notorious criminal rat, One-Ear escapes, Mr. Black organises a all-points bulletin to capture him. But more trouble is ...",
+        "imdb_rating": 4.0,
+        "genres": [
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Lu Zhao",
+            "Zijie Lin",
+            "Tianhao Wu"
+        ],
+        "directors": [
+            "Sheng-jun Yu"
+        ],
+        "writers": []
+    },
+    {
+        "id": "3ad8f287-93c6-41a7-b5b5-72bf26c885ca",
+        "title": "Nashville Star",
+        "description": "In a twist on American Idol (2002), amateur singers compete for several weeks to see which one will be selected by viewers' votes as the next country music superstar.",
+        "imdb_rating": 4.0,
+        "genres": [
+            {
+                "id": "5a8c42cb-e2da-43ad-ab3d-05337238d58f",
+                "name": "Game-Show",
+                "description": null
+            },
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Jeffrey Steele",
+            "Jewel Kilcher",
+            "Anastasia Brown",
+            "John Rich"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "82f5d9b3-a153-4fb3-af91-b50d03102bcb",
+        "title": "The One: Making a Music Star",
+        "description": "Based on the international sensation, the series will follow the lives of contestants as they attend a fully functioning music academy that turns aspiring singers into music stars through professional training. The show will follow all the drama in the music academy, as it offers vocal coaching and celebrity mentors who will turn potential into talent in a state-of-the-art training and recording facility. Each week contestants will perform live for the American audience, who will have to vote to keep their favorites in the competition. In addition, the contestants' coaches will also serve as judges. The winner will receive a recording contract with a major record company.",
+        "imdb_rating": 4.0,
+        "genres": [
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            }
+        ],
+        "actors": [
+            "George Stroumboulopoulos",
+            "Kara DioGuardi",
+            "Mark Hudson",
+            "Emmanuel Kiriakou"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "f77d984d-9435-401a-ab2f-50eeab4306b6",
+        "title": "I Know My Kid's a Star",
+        "description": "A reality series in which a group of kids (and their parents) compete in order to be deemed the next child star.",
+        "imdb_rating": 4.0,
+        "genres": [
+            {
+                "id": "5a8c42cb-e2da-43ad-ab3d-05337238d58f",
+                "name": "Game-Show",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Gian DiFranco",
+            "Melissa Brasselle",
+            "Danny Bonaduce",
+            "Marki Costello"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "f2eded7c-9790-4431-a69d-b94815f74d0a",
+        "title": "Star Knight",
+        "description": "When a dazzling craft illuminates the sky above a medieval European village, the townspeople fear mayhem while the ruling party prepares for battle with the mysterious \"dragon in the sky.\" After Princess Alba is discovered missing, the quest for power and the young girl's affections drive Klever to free her from the strange cosmic knight. But is that her desire? Worldly boundaries are crossed in this gothic sci-fi tale of power, greed and the universal language of love.",
+        "imdb_rating": 4.1,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "4f883b0a-f6db-48a0-a01a-4a8f56c3ee4c",
+                "name": "Fantasy",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Klaus Kinski",
+            "Harvey Keitel",
+            "Fernando Rey",
+            "Maria Lamor"
+        ],
+        "directors": [
+            "Fernando Colomo"
+        ],
+        "writers": [
+            "Andreu Martín",
+            "Miguel Ángel Nieto",
+            "Fernando Colomo"
+        ]
+    },
+    {
+        "id": "0fc5f8ad-2b67-4682-9dc8-c6b8b0b0fe67",
+        "title": "Star Portal",
+        "description": "An alien from a race dying of a disease crashes on Earth and assumes the body of a human. She then precedes to take blood from other humans to send back to her planet. Things get complicated when she starts to feel human emotions and other aliens show up to exterminate her. Her only hope lies with a curious and helpful doctor.",
+        "imdb_rating": 4.1,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Athena Massey",
+            "Anthony Crivello",
+            "Steven Bauer",
+            "Stephen Davies"
+        ],
+        "directors": [
+            "Jon Purdy"
+        ],
+        "writers": [
+            "Jon Purdy",
+            "Mark Hanna"
+        ]
+    },
+    {
+        "id": "ac08ca8d-e413-47c2-acfa-f590bafdafa2",
+        "title": "Star Appeal",
+        "description": "Chinese activist filmmaker Cui Zi'en crafts the first all gay Chinese science fiction film with this fantastical tale of a lonely extraterrestrial who learns a tender lesson in earthly love after being taken in by a curious bisexual. When Xiao Bo first saw the curious alien, he was alone and naked on a long stretch of highway. He claimed to be from Mars, so Xiao Bo brought him home in order to teach him a thing or two about life on Earth. Dubbed \"ET\" by his human hosts, the curious alien soon reveals that he has been sent to this planet in order to learn as much as possible about physical interaction. Bisexual Xiao Bo has both a girlfriend and a boyfriend, neither of whom are particularly thrilled that Xiao Bo has brought home a new lover. Later, when Xiao Bo's girlfriend attempts to have a child with \"ET,\" the alien falls into a deep coma. Now the way to revive \"ET\" is for Xiao Bo to utter the words \"I love you.\" Once that happens, Xiao Bo resolves to teach his extraterrestrial friend the true meaning of Earthly Love before \"ET\" travels back to his home planet to reveal his passionate findings.",
+        "imdb_rating": 4.1,
+        "genres": [
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Xiwen Zhang",
+            "Jian Hou",
+            "Guifeng Wang",
+            "Bo Yu"
+        ],
+        "directors": [
+            "Zi'en Cui"
+        ],
+        "writers": [
+            "Zi'en Cui"
+        ]
+    },
+    {
+        "id": "d1f7791d-8586-4885-bdca-54491bd0695f",
+        "title": "Rising Star",
+        "description": "For the first time, a musical talent show, in which the viewers vote through the application during the song.",
+        "imdb_rating": 4.2,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Assi Azar",
+            "Rani Rahav",
+            "Rita ",
+            "Zvika Hadar"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "f6f51162-3b0b-45af-b3e4-eacd2bae4d3e",
+        "title": "Broken Star",
+        "description": "Abandoned by her friends and family and with her career in jeopardy, starlet Markey Marlowe is sequestered in a duplex with a reclusive landlord who just may be more dangerous than she is.",
+        "imdb_rating": 4.2,
+        "genres": [
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Analeigh Tipton",
+            "Tyler Labine",
+            "Monique Coleman",
+            "Lauren Bowles"
+        ],
+        "directors": [
+            "Dave Schwep"
+        ],
+        "writers": [
+            "David Brant"
+        ]
+    },
+    {
+        "id": "c36eaa05-153e-4ce5-8eec-ff85c44aa093",
+        "title": "Pup Star",
+        "description": "Welcome to a world where dogs can not only talk -- they can SING! Tiny, a cute little Yorkie pup with a big voice, gets a chance to audition for the singing competition for dogs, \"Pup Star.\" After she earns a place in the finale, she's suddenly dog-napped! But with the help of her new friend, Charlie, a retired rock-and-roller, she escapes. Together they leave on an incredible journey through some of music's most iconic cities. They meet Big Ears - a soulful Bassett Hound who teaches Tiny to belt out the blues, Murray - a spiritual shaggy dog who helps her find her inner rhythm, and Emily Rose - a country-singing shepherd who helps her learn to sing from her heart. Most important of all, they all encourage Tiny to believe in herself and never give up on her dreams! Filled with all-new songs and the biggest cast of talking and singing canines ever assembled, Pup Star is an incredible family film filled with fun, music and heart.",
+        "imdb_rating": 4.2,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Makenzie Moss",
+            "Jonathan Mangum",
+            "Carla Jimenez",
+            "Susie Wall"
+        ],
+        "directors": [
+            "Robert Vince"
+        ],
+        "writers": [
+            "Anna McRoberts",
+            "Robert Vince",
+            "Kirsten Hansen"
+        ]
+    },
+    {
+        "id": "e2fb7d09-e2b7-4e26-bb58-b33c88374ae4",
+        "title": "Star académie",
+        "description": null,
+        "imdb_rating": 4.2,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Jean-François Bastien",
+            "François Babin",
+            "Julie Snyder",
+            "Josélito Michaud"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "fc74f67f-a100-436e-9e0c-7918092668be",
+        "title": "Star Wars Pathways: Chapter I - Path of Betrayal",
+        "description": "A Jedi Knight searches for his missing Padawan on the barren ice planet Dais VI only to find someone from his past out for revenge.",
+        "imdb_rating": 4.2,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Charles Olson",
+            "Robert Speicher",
+            "Justin Baughman",
+            "Maron Wong"
+        ],
+        "directors": [
+            "Christopher Pico"
+        ],
+        "writers": [
+            "Christopher Pico"
+        ]
+    },
+    {
+        "id": "72e70ff6-1c27-4dc5-8c0f-eb55f83aef69",
+        "title": "Star Pilot",
+        "description": "Aliens from the constellation Hydra crash-land on the island of Sardinia. A prominent scientist, his daughter, several young technicians, and a pair of Oriental spies are taken hostage by the beings so they can use them to repair their spaceship's broken engine. With that done, they take off towards their home planet, taking the earthlings with them. However, the humans attempt to mutiny against their captors, inadvertently sending their tiny spaceship hurtling into the infinite beyond...",
+        "imdb_rating": 4.3,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Roland Lesaffre",
+            "Mario Novelli",
+            "Leonora Ruffo",
+            "Kirk Morris"
+        ],
+        "directors": [
+            "Pietro Francisci"
+        ],
+        "writers": [
+            "Fernando Paolo Girolami",
+            "Ian Danby",
+            "Pietro Francisci"
+        ]
+    },
+    {
+        "id": "f1635e07-685b-46b8-a684-9cdac57e772e",
+        "title": "Amateur Porn Star Killer",
+        "description": "The unofficial story of a killer who kidnaps and kills three girls is told through the tale of his last victim, 'Amateur Porn Star Killer' is about a girl he picks up on the street and convinces to go back to his hotel room. The girl is shy, unnerved, and yet unable to take herself out of a bad situation. The killer is a guy who seems at first nothing more than your standard, 18 year old pervert with a penchant for filming his sexual escapades. An unsettling darkness descends.",
+        "imdb_rating": 4.3,
+        "genres": [
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Shane Ryan",
+            "Michiko Jimenez"
+        ],
+        "directors": [],
+        "writers": [
+            "Shane Ryan",
+            "Michiko Jimenez"
+        ]
+    },
+    {
+        "id": "d5072dcf-2fb4-4114-9801-e0e4cbe8c48c",
+        "title": "Star Runners",
+        "description": "Given a undercover government mission to retrieve a \"crate\" from a distant planet, TY JOHNS and LEI CHEN find that they must smuggle not a crate, but a woman off world -- and when their rocket-ship crash-lands on a planet packed with vicious giant alien bugs, they'll need all the cunning and ferocity they possess to stay alive...",
+        "imdb_rating": 4.3,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            },
+            {
+                "id": "cf8b42b7-d822-4138-8f00-b8c9a3c95d06",
+                "name": "Thriller",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Aja Evans",
+            "Connor Trinneer",
+            "James Kyson",
+            "Toni Trucks"
+        ],
+        "directors": [
+            "Mat King"
+        ],
+        "writers": [
+            "Rafael Jordan"
+        ]
+    },
+    {
+        "id": "c05af52e-be98-4712-a776-3a397c89b530",
+        "title": "Star Wars: The Force and the Fury",
+        "description": "A Jedi crash lands on a barren planet and is pursued by a mysterious Sith who seems to know him.",
+        "imdb_rating": 4.4,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Aris Juson",
+            "Deborah Lee Smith"
+        ],
+        "directors": [
+            "Jason Satterlund"
+        ],
+        "writers": []
+    },
+    {
+        "id": "11ff8157-8c90-4551-927d-37622ad7073b",
+        "title": "Star Trek: Disco Generation",
+        "description": "As every interplantary disco diva knows, the Borg can be beat ... if ya got the beat.",
+        "imdb_rating": 4.4,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            }
+        ],
+        "actors": [],
+        "directors": [
+            "Gordon Wong"
+        ],
+        "writers": []
+    },
+    {
+        "id": "9ca6a5b9-2220-4d07-b8df-71574235d134",
+        "title": "The Star Jones Reynolds Report",
+        "description": null,
+        "imdb_rating": 4.4,
+        "genres": [
+            {
+                "id": "629459b8-f7cd-42df-9c28-b6d3eda7dcbb",
+                "name": "Talk-Show",
+                "description": null
+            }
+        ],
+        "actors": [
+            "De Lacy Davis",
+            "Marion Bolden",
+            "Keith Black",
+            "Star Jones"
+        ],
+        "directors": [
+            "Butch Robinson"
+        ],
+        "writers": [
+            "Cindy Birch"
+        ]
+    },
+    {
+        "id": "c1849650-fe2c-4e79-8536-c653cecc6c91",
+        "title": "Star Wreck",
+        "description": "Captain James B. Pirk of the Starship C.P.P. Kickstart and his crew, Commander Dwarf and Commander Info, find themselves stranded on 21st Century Earth after a previous adventure to save the planet from hostile aliens.",
+        "imdb_rating": 4.4,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Janne Torssonen",
+            "Antti Keskinen",
+            "Samuli Torssonen"
+        ],
+        "directors": [
+            "Samuli Torssonen"
+        ],
+        "writers": [
+            "Samuli Torssonen"
+        ]
+    },
+    {
+        "id": "41ed1a70-a21b-4ea4-a1ef-9c3985c35a69",
+        "title": "Star Wolf",
+        "description": null,
+        "imdb_rating": 4.5,
+        "genres": [
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Tatsuya Azuma",
+            "Chôei Takahashi",
+            "Jô Shishido",
+            "Miyuki Tanigawa"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "22869f46-ac77-4c29-92b9-89b3ef028eb1",
+        "title": "Star Wars: The Apprentice",
+        "description": "A robed figure approaches. A Jedi knight appears behind her, then attacks. The duel commences.",
+        "imdb_rating": 4.5,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Paul J. Alessi"
+        ],
+        "directors": [
+            "Todd Sandler"
+        ],
+        "writers": [
+            "Steven Kobayashi"
+        ]
+    },
+    {
+        "id": "be735f7e-3fe9-4188-b535-f86b7296edc2",
+        "title": "Pup Star: Better 2Gether",
+        "description": "The action-packed new season of the franchise continues with the story of Tiny, an adorable Yorkie pup who, after winning the 'Pup Star' TV singing competition, is suddenly launched into an adventure when she's replaced by a street Yorkie, Scrappy, and the two swap lives in a dog-filled, fish-out-of-water tale that ultimately demonstrates life truly is 'better together.'",
+        "imdb_rating": 4.5,
+        "genres": [
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Lombardo Boyar",
+            "Molly Burnett",
+            "Obba Babatundé",
+            "Chris Coppola"
+        ],
+        "directors": [
+            "Robert Vince"
+        ],
+        "writers": [
+            "Robert Vince"
+        ]
+    },
+    {
+        "id": "be868ef3-5b53-414a-91e4-e8608cd1368f",
+        "title": "Sally Morgan: Star Psychic",
+        "description": null,
+        "imdb_rating": 4.5,
+        "genres": [
+            {
+                "id": "43817153-eae0-4519-939e-0c3c81da6ed3",
+                "name": "Documentary",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Sally Morgan",
+            "Craig Kelly"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "46f2d809-40e8-4b70-87af-03597fd00948",
+        "title": "Schlag den Star",
+        "description": null,
+        "imdb_rating": 4.5,
+        "genres": [
+            {
+                "id": "5a8c42cb-e2da-43ad-ab3d-05337238d58f",
+                "name": "Game-Show",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Frank Buschmann",
+            "Stefan Raab",
+            "Steven Gätjen"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "2bc95a21-31fc-408e-9647-92693be38ca7",
+        "title": "A Star is Born",
+        "description": null,
+        "imdb_rating": 4.5,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Nikola Bercek"
+        ],
+        "directors": [],
+        "writers": [
+            "Vanja Kovacevic"
+        ]
+    },
+    {
+        "id": "3e4bbb12-6e1b-4ce7-8729-d32ae582bb14",
+        "title": "STAR [Space Traveling Alien Reject]",
+        "description": "Greg Vincent is a struggling, alcoholic writer who has suffered a terrible loss in his life and is looking for inspiration for his next story. During this difficult time, he encounters a strange being from out of this world. Could this possible be the basis for the perfect story which could jump start not only his career but also his life?",
+        "imdb_rating": 4.6,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+                "name": "Horror",
+                "description": null
+            },
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Aryn Fitzgerald",
+            "Chris Barbis",
+            "Nicola Fiore",
+            "Lori Cholewka"
+        ],
+        "directors": [
+            "Adam R. Steigert"
+        ],
+        "writers": [
+            "Janeen Avery",
+            "Christopher Burns Jr.",
+            "Adam R. Steigert",
+            "Mark Mendola"
+        ]
+    },
+    {
+        "id": "aece098d-3d8f-435c-a13a-8b04c24e1845",
+        "title": "Star Falls",
+        "description": "Star Falls follows teen Sophia who persuades a Hollywood star, Craig Brooks, and his family to live in her house while he shoots a movie in town, hoping that he'll fall in love with her mom.",
+        "imdb_rating": 4.6,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Tomaso Sanelli",
+            "Dion Johnstone",
+            "Siena Agudong",
+            "Elena V. Wolfe"
+        ],
+        "directors": [],
+        "writers": [
+            "George Doty IV"
+        ]
+    },
+    {
+        "id": "88171f0c-25d7-4563-8c27-fe20ae530d07",
+        "title": "Fluffy Cumsalot, Porn Star",
+        "description": "Fluffy Cumsalot, Porn Star is an extraordinary documentary about porn stars and their stage names. Featuring Ron Jeremy, Marilyn Chambers, Jenna Jameson, Seymore Butts and over 70 more of the world's top porn stars, this film is a fascinating and revealing documentary about adult performers and the origin of their on-screen names. At 57 minutes, the film takes a very significant look at an under appreciated aspect of the porn industry - names. How did Ron Jeremy become known as 'The Hedgehog'? Fluffy Cumsalot, Porn Star examines this and goes further by asking legitimate porn stars how they came up with their current stage names and what their names would be if they had used the formula - your first pet and the name of the street that you grew up on. What results are some truly amazing and interesting stories intertwined with footage from movies , interviews and public appearances.",
+        "imdb_rating": 4.6,
+        "genres": [
+            {
+                "id": "43817153-eae0-4519-939e-0c3c81da6ed3",
+                "name": "Documentary",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Briana Banks",
+            "Ron Jeremy",
+            "Marilyn Chambers",
+            "Jenna Jameson"
+        ],
+        "directors": [
+            "Nathan S. Garfinkel"
+        ],
+        "writers": []
+    },
+    {
+        "id": "4dd43c5f-06e5-4f8d-98e4-7d211868373c",
+        "title": "You're a Star",
+        "description": "TV show to find the Republic of Ireland's entry for the Eurovision. Winner is decided by public vote.",
+        "imdb_rating": 4.6,
+        "genres": [
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Mickey Harte",
+            "Ray D'Arcy",
+            "Michael Leonard",
+            "Simon Casey"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "8a36f4c6-ad1c-4e2f-ba4a-8622423cae1a",
+        "title": "Star",
+        "description": null,
+        "imdb_rating": 4.6,
+        "genres": [
+            {
+                "id": "cd604009-2feb-48eb-86bf-dfbb7f14cb25",
+                "name": "Romance",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Jyothika ",
+            "Prashanth "
+        ],
+        "directors": [
+            "Praveenkanth "
+        ],
+        "writers": []
+    },
+    {
+        "id": "6fbf86d4-124e-45ce-b961-1eea2226af21",
+        "title": "All-Star American Destiny Trek",
+        "description": null,
+        "imdb_rating": 4.6,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Jill Talley",
+            "Tom Kenny",
+            "Will Arnett",
+            "Jess Harnell"
+        ],
+        "directors": [
+            "Eric Bryant"
+        ],
+        "writers": [
+            "Ethan T. Berlin"
+        ]
+    },
+    {
+        "id": "f92c6b11-3f73-4c3f-a9e3-85b1bb91284b",
+        "title": "Anything for a Pop Star",
+        "description": "The pop band Slavabody Disco Disco Boys announces that it will play in Brazil. Fans of the group, teenagers and best friends Gabi, Manu and Ritinha go out of their way to let their parents let them watch the show in another city.",
+        "imdb_rating": 4.7,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "e273f72e-02d0-452c-8c72-16fc66c8f2e4",
+                "name": "Family",
+                "description": null
+            },
+            {
+                "id": "844389c6-6302-4e44-873f-58d6a1320f9d",
+                "name": "Music",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Victor Aguiar",
+            "Maisa Silva",
+            "Klara Castanho",
+            "Mel Maia"
+        ],
+        "directors": [
+            "Bruno Garotti",
+            "Anita Barbosa()"
+        ],
+        "writers": [
+            "Thalita Rebouças"
+        ]
+    },
+    {
+        "id": "533f39d0-6019-44bd-b1d3-0d5dc3bc51fa",
+        "title": "Star Warp'd",
+        "description": null,
+        "imdb_rating": 4.7,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "David Carty",
+            "Michael Fleming",
+            "Jeff Walters",
+            "John Schuermann"
+        ],
+        "directors": [
+            "Pete Schuermann"
+        ],
+        "writers": [
+            "John Schuermann"
+        ]
+    },
+    {
+        "id": "61227622-8522-4322-bab2-edb57d35204b",
+        "title": "Star Troopers",
+        "description": "In the closing stages of the 21st Century, an enigmatic warrior, called the Baron, leads the crusade that the religious organization Exorcio Deus Machine is conducting against the forces of Evil. During an extermination mission, the Baron is taken prisoner by the evil sorceress Lady Pervertvm and is tortured until she gets his seed. Lady Pervertvm uses the Baron's seminal fluid to fertilize the Beast-Ragnarok in order to have it engender the most powerful and ultimate race of demons. The Baron manages to escape but, blinded by his guilt, he begins a bloody Via Crucis which will start to reveal his true nature.",
+        "imdb_rating": 4.7,
+        "genres": [
+            {
+                "id": "4f883b0a-f6db-48a0-a01a-4a8f56c3ee4c",
+                "name": "Fantasy",
+                "description": null
+            },
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Juan Carlos Romeu",
+            "Alejandro Ribelles",
+            "Xavier Bertran",
+            "Helena Lecumberri"
+        ],
+        "directors": [
+            "Ricardo Ribelles"
+        ],
+        "writers": [
+            "Ricardo Ribelles"
+        ]
+    },
+    {
+        "id": "1a0ecd50-403b-44ad-8eac-7ff0bf8792c8",
+        "title": "All Star Mr & Mrs",
+        "description": null,
+        "imdb_rating": 4.7,
+        "genres": [
+            {
+                "id": "5a8c42cb-e2da-43ad-ab3d-05337238d58f",
+                "name": "Game-Show",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Peter Dickson",
+            "Fern Britton",
+            "Phillip Schofield"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "5faf5c69-6694-47a7-aefe-23f23880a866",
+        "title": "The Star of Bethlehem",
+        "description": "Three wise men from the East follow a star to Bethlehem in search of the infant Jesus.",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Harry Benham",
+            "James Cruze",
+            "William Russell",
+            "Florence La Badie"
+        ],
+        "directors": [
+            "Lawrence Marston"
+        ],
+        "writers": [
+            "Lloyd Lonergan"
+        ]
+    },
+    {
+        "id": "c1d65761-f0a2-4444-b8e7-08b2f065c2da",
+        "title": "Lone Star Law Men",
+        "description": "Duke is the leader of a gang of border bandits. When Marshal Brady is sent to investigate, he is shot. Found by Tom and sidekick Lopez, Tom gets Brady to make him his deputy. Duke makes Tom Sheriff and Tom sets a trap to capture the gang. But Duke is suspicious and changes plans and Tom quickly finds himself Duke's prisoner.",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "7a75da54-362e-474d-a7c6-736fd0746f27",
+                "name": "Western",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Frank Yaconelli",
+            "Sugar Dawn",
+            "Betty Miles",
+            "Tom Keene"
+        ],
+        "directors": [
+            "Robert Emmett Tansey"
+        ],
+        "writers": [
+            "Robert Emmett Tansey",
+            "Frances Kavanaugh"
+        ]
+    },
+    {
+        "id": "4871f55e-02b6-4a92-84f6-fe5f0779c309",
+        "title": "Star Trak",
+        "description": "The Starship Enterprise is called to assist the Turds on the planet Uranus. Once inside the planet's flatulating force field, the Starship is pulled through the stench toward the crack in Uranus where a sphincter will crush it. Mr. Spock prepares a preparation HP, which, without time to test it, Captain Kirk orders be shot into Uranus. Will Spock's concoction shrink the planet's tracteroids and save the Starship?",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            }
+        ],
+        "actors": [],
+        "directors": [
+            "Roy T. Wood"
+        ],
+        "writers": []
+    },
+    {
+        "id": "df50427e-59af-4bea-8bec-19a6113e20e2",
+        "title": "Quentin Tarantino's Star Wars",
+        "description": "We're all familiar with the story: a long time ago in a galaxy far, far away, on a planet called Tattooine, a boy named Luke Skywalker is adopted by the only remaining Jedi knight and helps the Rebellion destroy the Death Star after learning the ways of the force. However, what if \"Pulp Fiction\" director Quentin Tarantino had directed George Lucas' script, using Kenner action figures and stop computer animation?",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Anthony Daniels",
+            "Harrison Ford",
+            "Alec Guinness",
+            "Mark Hamill"
+        ],
+        "directors": [
+            "Evan Mather"
+        ],
+        "writers": [
+            "Evan Mather"
+        ]
+    },
+    {
+        "id": "6993f0e5-17d2-473f-aa19-e1f8f76c2295",
+        "title": "Star Wars: Jedi Arena",
+        "description": null,
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "09378aab-c211-49e5-9605-6c2e0e694ce0",
+        "title": "Star Wars Forces of Destiny: Volume 3",
+        "description": "While organizing some of her things, Maz shares stories of bravery.",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "eac04ea7-33dd-4666-bfcf-72e5eda87f07",
+                "name": "Animation",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Dave Filoni",
+            "John Boyega",
+            "Ashley Eckstein",
+            "David Acord"
+        ],
+        "directors": [
+            "Brad Rau"
+        ],
+        "writers": [
+            "Jennifer Muro"
+        ]
+    },
+    {
+        "id": "bb58005d-09fe-442c-a96a-1f300e089b8f",
+        "title": "Ich bin ein Star - Holt mich hier raus!",
+        "description": "I'm a Celebrity - Get Me Out of Here. (often referred to as a jungle camp) is a reality show that has been aired by the RTL since 2004.",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "98d92138-a835-494d-8d59-3c2f250f3164",
+                "name": "Adventure",
+                "description": null
+            },
+            {
+                "id": "db922273-2346-4983-beb3-64e0ca4b34e8",
+                "name": "Comedy",
+                "description": null
+            },
+            {
+                "id": "2ada0e48-48ea-4840-9d1d-c2e28ceb6406",
+                "name": "Reality-TV",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Daniel Hartwich",
+            "Dirk Bach",
+            "Sonja Zietlow",
+            "Bob McCarron"
+        ],
+        "directors": [],
+        "writers": []
+    },
+    {
+        "id": "fbf8b8de-32d9-488d-98f6-0c0219d2a31f",
+        "title": "Star Trek: Hidden Frontier",
+        "description": "For the last six years, has continued the ongoing missions of Starfleet after the journeys of Star Trek: The Next Generation, Star Trek: Deep Space Nine, and Star Trek: Voyager. More than \"just a fan film\", has made an improving production using spectacular special effects.",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "e7d0a458-2cd4-4ceb-b2d3-3649e68cbed3",
+                "name": "Short",
+                "description": null
+            },
+            {
+                "id": "7c01ac8f-b93a-4e5f-b631-f772ac08e8c3",
+                "name": "Action",
+                "description": null
+            },
+            {
+                "id": "c8cb8aa5-926c-4180-81cb-404e2be58a2c",
+                "name": "Sci-Fi",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Barbara Clifford",
+            "John Whiting",
+            "David Dial",
+            "Risha Denney"
+        ],
+        "directors": [],
+        "writers": [
+            "Rob Caves",
+            "Gene Roddenberry"
+        ]
+    },
+    {
+        "id": "02e60c37-91a1-40fa-82bf-14e4dfe7e665",
+        "title": "Pop Star",
+        "description": "When talented young singer, Roxie Santos, meets music producer, Eddie Marz, he promises her an amazing new lifestyle and a future record deal. All he needs her to do is first lend her voice to a celebrity with no singing talent. However, when things go too far and it looks like she might lose her \"voice\" forever, she sets off to prove the truth.",
+        "imdb_rating": 4.8,
+        "genres": [
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            },
+            {
+                "id": "cd604009-2feb-48eb-86bf-dfbb7f14cb25",
+                "name": "Romance",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Ross Thomas",
+            "Rachele Brooke Smith",
+            "Christian Serratos",
+            "Robert Adamson"
+        ],
+        "directors": [
+            "Carlos Portugal"
+        ],
+        "writers": [
+            "Chris Franco",
+            "Carlos Portugal",
+            "Charo Toledo",
+            "Robin Bain"
+        ]
+    },
+    {
+        "id": "d8a3b620-f327-4b8b-b542-cbcc5f969533",
+        "title": "Star of My Night",
+        "description": "A world-weary sculptor meets a young ballerina and finds she has inspired a fresh outlook on life in him. He starts a life-sized sculpture of her but this enrages her jealous lover.",
+        "imdb_rating": 4.9,
+        "genres": [
+            {
+                "id": "d7884470-3843-4de7-9eb5-08ba9ae8a9e5",
+                "name": "Drama",
+                "description": null
+            },
+            {
+                "id": "cd604009-2feb-48eb-86bf-dfbb7f14cb25",
+                "name": "Romance",
+                "description": null
+            }
+        ],
+        "actors": [
+            "Griffith Jones",
+            "Harold Lang",
+            "Kathleen Byron",
+            "Hugh Williams"
+        ],
+        "directors": [
+            "Paul Dickson"
+        ],
+        "writers": [
+            "Paul Tabori"
+        ]
+    }
+]

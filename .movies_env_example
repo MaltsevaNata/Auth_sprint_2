@@ -1,0 +1,22 @@
+ELASTIC_HOST=movies_elastic
+ELASTIC_PORT=9200
+REDIS_HOST=redis
+REDIS_PORT=6379
+
+DEBUG=1
+DJANGO_ALLOWED_HOSTS=localhost 127.0.0.1 [::1]
+
+SQL_ENGINE=django.db.backends.postgresql
+SQL_DATABASE=movies
+SQL_USER=postgres
+SQL_PASSWORD=password
+SQL_HOST=movies_postgres
+SQL_PORT=5432
+DATABASE=postgres
+DJANGO_SUPERUSER_PASSWORD=password
+DJANGO_SUPERUSER_USERNAME=user
+DJANGO_SUPERUSER_EMAIL=user@email.com
+DJANGO_SETTINGS_MODULE=config.settings.production
+SECRET_KEY=secret
+
+AUTH_URL=auth_app:5000

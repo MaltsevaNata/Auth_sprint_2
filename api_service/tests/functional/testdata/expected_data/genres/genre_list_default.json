@@ -1,0 +1,52 @@
+[
+    {
+        "id": "bed5ad71-11c6-47eb-b2fd-fd5ffc651c84",
+        "name": "War",
+        "description": null
+    },
+    {
+        "id": "7e96084f-1630-44c2-bb79-52521b45870f",
+        "name": "News",
+        "description": null
+    },
+    {
+        "id": "dcc117fc-5402-4948-9bfc-bbdc4648eb59",
+        "name": "Mystery",
+        "description": null
+    },
+    {
+        "id": "896056d9-23fd-4ba8-9435-708cf6c1a0fb",
+        "name": "History",
+        "description": null
+    },
+    {
+        "id": "b728e110-3252-4024-8afc-ec8fee273a38",
+        "name": "Crime",
+        "description": null
+    },
+    {
+        "id": "95919aae-1dfc-484e-a057-b809df727b6b",
+        "name": "Horror",
+        "description": null
+    },
+    {
+        "id": "f52ece5d-f68c-40eb-ad20-7f6533c9a8b9",
+        "name": "Sport",
+        "description": null
+    },
+    {
+        "id": "7a75da54-362e-474d-a7c6-736fd0746f27",
+        "name": "Western",
+        "description": null
+    },
+    {
+        "id": "5a8c42cb-e2da-43ad-ab3d-05337238d58f",
+        "name": "Game-Show",
+        "description": null
+    },
+    {
+        "id": "629459b8-f7cd-42df-9c28-b6d3eda7dcbb",
+        "name": "Talk-Show",
+        "description": null
+    }
+]

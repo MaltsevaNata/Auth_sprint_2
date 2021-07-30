@@ -31,9 +31,11 @@ def create_app(config_class=Config):
     ma.init_app(app)
     jwt.init_app(app)
 
+    url_prefix = "/auth/v1"
+
     # Registrate blueprints
     from api.v1.api_bp import bp as api_bp
-    app.register_blueprint(api_bp, url_prefix="/api/v1")
+    app.register_blueprint(api_bp, url_prefix=url_prefix)
     from commands import usersbp
     app.register_blueprint(usersbp)
 
@@ -43,85 +45,85 @@ def create_app(config_class=Config):
     from api.v1.utils import swagger_views
 
     app.add_url_rule(
-        '/api/v1/sign_up',
+        url_prefix + '/sign_up',
         view_func=swagger_views.SignUpView.as_view('sign_up'),
         methods=['POST'],
 
     )
     app.add_url_rule(
-        '/api/v1/sign_in',
+        url_prefix + '/sign_in',
         view_func=swagger_views.SignInView.as_view('sign_in'),
         methods=['POST']
     )
     app.add_url_rule(
-        '/api/v1/sign_out',
+        url_prefix + '/sign_out',
         view_func=swagger_views.SignOutView.as_view('sign_out'),
         methods=['POST']
     )
     app.add_url_rule(
-        '/api/v1/sign_out_all',
+        url_prefix + '/sign_out_all',
         view_func=swagger_views.SignOutAllView.as_view('sign_out_all'),
         methods=['POST']
     )
     app.add_url_rule(
-        '/api/v1/refresh',
+        url_prefix + '/refresh',
         view_func=swagger_views.RefreshView.as_view('refresh'),
         methods=['POST']
     )
     app.add_url_rule(
-        '/api/v1/user/update',
+        url_prefix + '/update',
         view_func=swagger_views.UpdateView.as_view('update'),
         methods=['PATCH']
     )
 
     app.add_url_rule(
-        '/api/v1/user/history',
+        url_prefix + '/user/history',
         view_func=swagger_views.HistoryView.as_view('history'),
         methods=['GET']
     )
     app.add_url_rule(
-        '/api/v1/user/change_password',
+        url_prefix + '/user/change_password',
         view_func=swagger_views.ChangePasswordView.as_view('change_password'),
         methods=['POST']
     )
     app.add_url_rule(
-        '/api/v1/user/me',
+        url_prefix + '/user/me',
         view_func=swagger_views.MeView.as_view('me'),
         methods=['GET']
     )
     app.add_url_rule(
-        '/api/v1/user/role',
+        url_prefix + '/user/role',
         view_func=swagger_views.UserRoleView.as_view('role'),
         methods=['GET']
     )
     app.add_url_rule(
-        '/api/v1/user/add_role',
+        url_prefix + '/user/add_role',
         view_func=swagger_views.AddRoleView.as_view('add_role'),
         methods=['POST']
     )
     app.add_url_rule(
-        '/api/v1/user/remove_role',
+        url_prefix + '/user/remove_role',
         view_func=swagger_views.RemoveRoleView.as_view('remove_role'),
         methods=['POST']
     )
 
     app.add_url_rule(
-        '/api/v1/roles',
+        url_prefix + '/roles',
         view_func=swagger_views.RoleView.as_view('get_roles'),
         methods=['GET']
     )
     app.add_url_rule(
-        '/api/v1/roles',
+        url_prefix + '/roles',
         view_func=swagger_views.CreateRoleView.as_view('create_role'),
         methods=['POST']
     )
     app.add_url_rule(
-        '/api/v1/roles/<id>',
+        url_prefix + '/roles/<id>',
         view_func=swagger_views.UpdateRoleView.as_view('update_role'),
         methods=['PATCH']
     )
     app.add_url_rule(
-        '/api/v1/roles/<id>',
+        url_prefix + '/roles/<id>',
         view_func=swagger_views.DeleteRoleView.as_view('delete_role'),
         methods=['DELETE']
     )
