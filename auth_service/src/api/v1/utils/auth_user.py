@@ -21,7 +21,9 @@ def auth_user(user):
         LoginHistory(
             user_id=user.id,
             user_agent=request.user_agent.string,
-            ip_addr=request.remote_addr)
+            ip_addr=request.remote_addr,
+            user_device=request.user_agent.string
+        )
     )
     db.session.commit()
 

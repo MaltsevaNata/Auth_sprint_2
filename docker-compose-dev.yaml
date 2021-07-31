@@ -1,0 +1,32 @@
+services:
+  auth_app:
+    container_name: auth_app
+    build:
+      context: ./auth_service
+    env_file:
+      - ./auth_service/.env
+    depends_on:
+      - auth_postgres
+      - redis
+
+  auth_postgres:
+    container_name: auth_postgres
+    image: postgres:13-alpine
+    restart: always
+    volumes:
+      - auth_psql_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    ports:
+      - "5432:5432"
+    env_file:
+      - ./.env
+
+  redis:
+    image: redis:6.2-alpine
+    ports:
+      - "6379:6379"
+
+volumes:
+  auth_psql_data:
+  movies_psql_data:
+  static_volume:

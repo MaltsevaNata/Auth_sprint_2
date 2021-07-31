@@ -56,6 +56,7 @@ zope.interface==5.4.0
 pyotp==2.6.0
 flasgger==0.9.5
 apispec==4.7.1
+user-agents==2.2.0
 google-api-python-client==2.14.1
 google-auth==1.33.1
 google-auth-oauthlib==0.4.4
