@@ -27,6 +27,16 @@ class Config(object):
     REDIS_TTL: timedelta = timedelta(minutes=16)
     REDIS_EXTENDED_TTL: timedelta = timedelta(days=366)
 
+    # Google
+    OAUTHLIB_INSECURE_TRANSPORT: int = os.environ.get('OAUTHLIB_INSECURE_TRANSPORT', 0)
+    GOOGLE_CLIENT_SECRET_FILEPATH: str = os.environ.get('GOOGLE_CLIENT_SECRET_FILEPATH')
+    GOOGLE_CLIENT_SCOPES: List[str] = [
+            'openid',
+            'https://www.googleapis.com/auth/userinfo.email',
+            'https://www.googleapis.com/auth/userinfo.profile'
+        ]
+    MOCK_PASSWORD_LENGTH: int = os.environ.get('MOCK_PASSWORD_LENGTH', 64)
+
     # Mail
     MAIL_SERVER: str = os.environ.get("MAIL_SERVER", "localhost")
     MAIL_PORT: int = os.environ.get("MAIL_PORT", 25)
