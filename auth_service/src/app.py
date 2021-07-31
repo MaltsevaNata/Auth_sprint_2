@@ -1,17 +1,29 @@
 from flask import redirect, url_for
 
-from core import create_app
+from core import create_app, Config
+from core.bucket import Bucket
 from core.redis import get_redis
-from api.v1.errors import bad_request
+from api.v1.errors import bad_request, too_many
 
 redis = get_redis()
-
+bucket = Bucket(
+        key=Config.BUCKET_KEY,
+        rate=Config.BUCKET_RATE,
+        capacity=Config.BUCKET_CAPACITY,
+        storage=redis
+    )
 app = create_app()
 
 
 @app.errorhandler(400)
 def handle_bad_request(exc):
-    return bad_request(exc.description)
+    return bad_request(exc.get_description())
+
+
+@app.before_request
+def rate_limit():
+    if not bucket.consume():
+        return too_many("Too Many Requests")
 
 
 @app.route("/")
