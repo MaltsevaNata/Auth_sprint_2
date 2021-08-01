@@ -1,4 +1,4 @@
-from flask import redirect, url_for
+from flask import redirect, url_for, request
 
 from core import create_app
 from core.redis import get_redis
@@ -9,6 +9,13 @@ redis = get_redis()
 app = create_app()
 
 
+@app.before_request
+def before_request():
+    request_id = request.headers.get("X-Request-Id")
+    if not request_id:
+        raise RuntimeError("request id is required")
+
+    
 @app.errorhandler(400)
 def handle_bad_request(exc):
     return bad_request(exc.description)
