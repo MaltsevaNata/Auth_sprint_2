@@ -14,5 +14,6 @@ COPY ./src .
 COPY ./utils ./utils
 COPY ./entrypoint.sh .
 
-ENTRYPOINT [ "./entrypoint.sh" ]
+RUN mkdir -p /usr/local/var/log/gunicorn/
 
+ENTRYPOINT [ "./entrypoint.sh" ]
