@@ -1,11 +1,13 @@
 import logging
+from datetime import timedelta
 
 import aioredis
 import uvicorn
 from elasticsearch import AsyncElasticsearch
 from fastapi import FastAPI, Request, Response
 from fastapi.responses import ORJSONResponse
-from httpx import AsyncClient
+from httpx import AsyncClient, RequestError
+from aiobreaker import CircuitBreaker, CircuitBreakerListener
 
 from api.v1 import filmwork, genre, person
 from core import config
@@ -40,23 +42,37 @@ app.include_router(filmwork.router, prefix="/api/v1/film", tags=["film"])
 app.include_router(genre.router, prefix="/api/v1/genre", tags=["genre"])
 app.include_router(person.router, prefix="/api/v1/person", tags=["person"])
 
+auth_breaker = CircuitBreaker(fail_max=5)
+
 
 @app.middleware("http")
 async def add_process_time_header(request: Request, call_next):
     headers = request.headers
-    if not "authorization" in headers:
-        # здесь нужно возвращать ответ для анонимного пользователя
-        return Response(content="Anonymous user", status_code=401)
     base_url = "http://" + config.AUTH_URL
-    async with AsyncClient() as client:
-        auth_answer = await client.get(f"{base_url}/auth/v1/authorize", headers=dict(headers))
+    try:
+        auth_answer = await send_circuit_request(f"{base_url}/auth/v1/authorize", headers=dict(headers))
+    except RequestError:
+        return Response(content="Anonymous user", status_code=401)  # будем возвращать фильмы для анонимных юзеров
     if auth_answer.status_code == 200:
         data = auth_answer.json()
         if data["roles"]:  # здесь должна быть проверка роли, если просто юзер, то одни данные, если подписчик - другие
             response = await call_next(request)
             return response
         return Response(content="Not allowed", status_code=403)
-    return Response(content="Anonymous user", status_code=401)
+    return Response(content="Anonymous user", status_code=401)  # будем возвращать фильмы для анонимных юзеров
+
+
+class LogListener(CircuitBreakerListener):
+    def state_change(self, breaker, old, new):
+        logging.info(f"{old.state} -> {new.state}")
+
+
+@auth_breaker
+async def send_circuit_request(url: str, headers: dict):
+    async with AsyncClient() as client:
+        answer = await client.get(url, headers=headers)
+        logging.info(answer)
+        return answer
 
 
 if __name__ == "__main__":

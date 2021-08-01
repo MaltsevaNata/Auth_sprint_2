@@ -6,3 +6,4 @@ orjson==3.5.1
 uvicorn==0.13.4
 furl==2.1.2
 httpx==0.18.2
+aiobreaker==1.2.0
