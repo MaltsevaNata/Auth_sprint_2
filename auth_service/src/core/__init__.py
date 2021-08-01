@@ -4,14 +4,16 @@ from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
 from flasgger import Swagger
 from flask_sqlalchemy import SQLAlchemy
+from flask_opentracing import FlaskTracer
 
 from .config import Config
+
+URL_PREFIX = "/auth/v1"
 
 db = SQLAlchemy()
 migrate = Migrate()
 ma = Marshmallow()
 jwt = JWTManager()
-
 
 def create_app(config_class=Config):
 
@@ -30,12 +32,14 @@ def create_app(config_class=Config):
     migrate.init_app(app, db)
     ma.init_app(app)
     jwt.init_app(app)
+    
+    import core.jaeger as jaeger
+    jaeger.tracer = FlaskTracer(jaeger._setup_jaeger, app=app)
 
-    url_prefix = "/auth/v1"
 
     # Registrate blueprints
     from api.v1.api_bp import bp as api_bp
-    app.register_blueprint(api_bp, url_prefix=url_prefix)
+    app.register_blueprint(api_bp, url_prefix=URL_PREFIX)
     from commands import usersbp
     app.register_blueprint(usersbp)
 
@@ -45,85 +49,85 @@ def create_app(config_class=Config):
     from api.v1.utils import swagger_views
 
     app.add_url_rule(
-        url_prefix + '/sign_up',
+        URL_PREFIX + '/sign_up',
         view_func=swagger_views.SignUpView.as_view('sign_up'),
         methods=['POST'],
 
     )
     app.add_url_rule(
-        url_prefix + '/sign_in',
+        URL_PREFIX + '/sign_in',
         view_func=swagger_views.SignInView.as_view('sign_in'),
         methods=['POST']
     )
     app.add_url_rule(
-        url_prefix + '/sign_out',
+        URL_PREFIX + '/sign_out',
         view_func=swagger_views.SignOutView.as_view('sign_out'),
         methods=['POST']
     )
     app.add_url_rule(
-        url_prefix + '/sign_out_all',
+        URL_PREFIX + '/sign_out_all',
         view_func=swagger_views.SignOutAllView.as_view('sign_out_all'),
         methods=['POST']
     )
     app.add_url_rule(
-        url_prefix + '/refresh',
+        URL_PREFIX + '/refresh',
         view_func=swagger_views.RefreshView.as_view('refresh'),
         methods=['POST']
     )
     app.add_url_rule(
-        url_prefix + '/update',
+        URL_PREFIX + '/update',
         view_func=swagger_views.UpdateView.as_view('update'),
         methods=['PATCH']
     )
 
     app.add_url_rule(
-        url_prefix + '/user/history',
+        URL_PREFIX + '/user/history',
         view_func=swagger_views.HistoryView.as_view('history'),
         methods=['GET']
     )
     app.add_url_rule(
-        url_prefix + '/user/change_password',
+        URL_PREFIX + '/user/change_password',
         view_func=swagger_views.ChangePasswordView.as_view('change_password'),
         methods=['POST']
     )
     app.add_url_rule(
-        url_prefix + '/user/me',
+        URL_PREFIX + '/user/me',
         view_func=swagger_views.MeView.as_view('me'),
         methods=['GET']
     )
     app.add_url_rule(
-        url_prefix + '/user/role',
+        URL_PREFIX + '/user/role',
         view_func=swagger_views.UserRoleView.as_view('role'),
         methods=['GET']
     )
     app.add_url_rule(
-        url_prefix + '/user/add_role',
+        URL_PREFIX + '/user/add_role',
         view_func=swagger_views.AddRoleView.as_view('add_role'),
         methods=['POST']
     )
     app.add_url_rule(
-        url_prefix + '/user/remove_role',
+        URL_PREFIX + '/user/remove_role',
         view_func=swagger_views.RemoveRoleView.as_view('remove_role'),
         methods=['POST']
     )
 
     app.add_url_rule(
-        url_prefix + '/roles',
+        URL_PREFIX + '/roles',
         view_func=swagger_views.RoleView.as_view('get_roles'),
         methods=['GET']
     )
     app.add_url_rule(
-        url_prefix + '/roles',
+        URL_PREFIX + '/roles',
         view_func=swagger_views.CreateRoleView.as_view('create_role'),
         methods=['POST']
     )
     app.add_url_rule(
-        url_prefix + '/roles/<id>',
+        URL_PREFIX + '/roles/<id>',
         view_func=swagger_views.UpdateRoleView.as_view('update_role'),
         methods=['PATCH']
     )
     app.add_url_rule(
-        url_prefix + '/roles/<id>',
+        URL_PREFIX + '/roles/<id>',
         view_func=swagger_views.DeleteRoleView.as_view('delete_role'),
         methods=['DELETE']
     )
