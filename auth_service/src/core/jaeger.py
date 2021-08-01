@@ -1,7 +1,9 @@
-from jaeger_client import Config
-from flask_opentracing import FlaskTracer
+import functools
 import os
+
 import jaeger_client
+from flask_opentracing import FlaskTracer
+from jaeger_client import Config
 
 
 def _setup_jaeger():
@@ -22,3 +24,12 @@ def _setup_jaeger():
 
 
 tracer: FlaskTracer = None
+
+
+# Decorator
+def trace(fn):
+    @functools.wraps(fn)
+    def decorated(*args, **kwargs):
+        with tracer.start_span(operation_name=fn.__name__) as span:
+            return fn(*args, **kwargs)
+    return decorated
