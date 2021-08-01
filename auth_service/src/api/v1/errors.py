@@ -21,3 +21,7 @@ def unauthorized(message):
 
 def forbidden(message):
     return error_response(403, message)
+
+
+def too_many(message):
+    return error_response(429, message)

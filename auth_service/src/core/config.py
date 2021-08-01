@@ -37,6 +37,11 @@ class Config(object):
         ]
     MOCK_PASSWORD_LENGTH: int = os.environ.get('MOCK_PASSWORD_LENGTH', 64)
 
+    # Leaky bucket
+    BUCKET_KEY: str = os.environ.get('BUCKET_KEY', 'leaky')
+    BUCKET_RATE: float = os.environ.get('BUCKET_RATE', 100.0)       # каждую секунду ведро пропускает 100 запросов
+    BUCKET_CAPACITY: int = os.environ.get('BUCKET_CAPACITY', 500)   # начальный объем "ведра" - 500 запросов
+
     # Mail
     MAIL_SERVER: str = os.environ.get("MAIL_SERVER", "localhost")
     MAIL_PORT: int = os.environ.get("MAIL_PORT", 25)
