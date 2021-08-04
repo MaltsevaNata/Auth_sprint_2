@@ -95,28 +95,6 @@ class UserManager:
 
         return user
 
-    def create_google_user(self, google_email, first_name, last_name):
-
-        self.schema_class().load(dict(
-            username=google_email,
-            email=google_email,
-            google_email=google_email,
-            first_name=first_name,
-            last_name=last_name
-        ))
-
-        user = self.model(
-            username=google_email,
-            email=google_email,
-            google_email=google_email,
-            first_name=first_name,
-            last_name=last_name
-        )
-        user.set_password(self.generate_password(size=Config.MOCK_PASSWORD_LENGTH))
-
-        user.save()
-        return user
-
     @catch_validation_errors
     def update_user(self, user, data):
         # TODO: Fix this
