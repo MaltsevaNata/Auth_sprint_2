@@ -1,17 +1,10 @@
-from flask import redirect, url_for, request
+from flask import redirect, request, url_for
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 
-from core import create_app, Config
-from core.bucket import Bucket
-from core.redis import get_redis
 from api.v1.errors import bad_request, too_many
+from core import Config, create_app
 
-redis = get_redis()
-bucket = Bucket(
-        key=Config.BUCKET_KEY,
-        rate=Config.BUCKET_RATE,
-        capacity=Config.BUCKET_CAPACITY,
-        storage=redis
-    )
 app = create_app()
 
 
@@ -21,16 +14,15 @@ def before_request():
     if not request_id:
         raise RuntimeError("request id is required")
 
-    
+
 @app.errorhandler(400)
 def handle_bad_request(exc):
     return bad_request(exc.get_description())
 
 
-@app.before_request
-def rate_limit():
-    if not bucket.consume():
-        return too_many("Too Many Requests")
+@app.errorhandler(429)
+def ratelimit_handler(e):
+    return too_many("ratelimit exceeded %s" % e.description)
 
 
 @app.route("/")

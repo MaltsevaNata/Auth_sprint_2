@@ -1,10 +1,12 @@
+from flasgger import Swagger
 from flask import Flask
 from flask_jwt_extended import JWTManager
+from flask_limiter import Limiter
+from flask_limiter.util import get_remote_address
 from flask_marshmallow import Marshmallow
 from flask_migrate import Migrate
-from flasgger import Swagger
-from flask_sqlalchemy import SQLAlchemy
 from flask_opentracing import FlaskTracer
+from flask_sqlalchemy import SQLAlchemy
 
 from .config import Config
 
@@ -14,6 +16,8 @@ db = SQLAlchemy()
 migrate = Migrate()
 ma = Marshmallow()
 jwt = JWTManager()
+limiter = Limiter(key_func=get_remote_address, default_limits=["200 per day", "50 per hour"])
+
 
 def create_app(config_class=Config):
 
@@ -32,10 +36,10 @@ def create_app(config_class=Config):
     migrate.init_app(app, db)
     ma.init_app(app)
     jwt.init_app(app)
-    
+    limiter.init_app(app)
+
     import core.jaeger as jaeger
     jaeger.tracer = FlaskTracer(jaeger._setup_jaeger, app=app)
-
 
     # Registrate blueprints
     from api.v1.api_bp import bp as api_bp
