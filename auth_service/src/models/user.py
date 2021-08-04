@@ -21,7 +21,7 @@ class User(ModelTimeStamped):
     last_name = db.Column(db.String, nullable=True)
     email = db.Column(db.String, nullable=True)
     roles = db.relationship("Role", secondary=UserRole, back_populates="users")
-    is_active_2FA = db.Column(db.Boolean, default=False)
+    is_active_2fa = db.Column(db.Boolean, default=False)
     is_verified = db.Column(db.Boolean, default=False)
     totp_secret = db.Column(db.String, nullable=True)
     google_email = db.Column(db.String, nullable=True)
@@ -50,11 +50,11 @@ class User(ModelTimeStamped):
         return roles
 
     def activate_2fa(self):
-        self.is_active_2FA = True
+        self.is_active_2fa = True
         self.save()
 
     def deactivate_2fa(self):
-        self.is_active_2FA = False
+        self.is_active_2fa = False
         self.save()
 
     def save(self):
