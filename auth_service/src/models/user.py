@@ -24,7 +24,6 @@ class User(ModelTimeStamped):
     is_active_2fa = db.Column(db.Boolean, default=False)
     is_verified = db.Column(db.Boolean, default=False)
     totp_secret = db.Column(db.String, nullable=True)
-    google_email = db.Column(db.String, nullable=True)
 
     def __repr__(self):
         return f"<User {self.username} {self.roles}>"
@@ -153,9 +152,6 @@ class UserManager:
 
     def get_by_id(self, value):
         return self.model.query.filter_by(id=value).first()
-
-    def get_by_google_email(self, value):
-        return self.model.query.filter_by(google_email=value).first()
 
     def generate_password(self, size, chars=string.ascii_letters + string.punctuation + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
