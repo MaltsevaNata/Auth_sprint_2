@@ -131,5 +131,8 @@ class UserManager:
     def get_by_id(self, value):
         return self.model.query.filter_by(id=value).first()
 
+    def generate_username(self, size, chars=string.ascii_letters + string.digits):
+        return 'user_' + ''.join(random.choice(chars) for _ in range(size))
+
     def generate_password(self, size, chars=string.ascii_letters + string.punctuation + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
