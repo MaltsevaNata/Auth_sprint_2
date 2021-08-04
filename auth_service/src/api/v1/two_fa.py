@@ -1,8 +1,10 @@
 import pyotp
-from flask import jsonify, render_template, request, url_for, current_app, redirect
+from flask import jsonify, current_app
 
 from .api_bp import bp
+from .utils import schemas
 from .utils.auth_user import auth_user
+from .utils.decorators import validate_request
 
 
 @bp.route("/initial_sync/<string:user_id>")
@@ -15,12 +17,13 @@ def initial_sync(user_id: str):
     user.totp_secret = secret
     user.save()
     totp = pyotp.TOTP(secret)
-    provisioning_url = totp.provisioning_uri(name=user_id + '@praktikum.ru', issuer_name='Awesome Auth app')
-    return render_template("sync_template.html", url=provisioning_url, id=user_id)
+    provisioning_url = totp.provisioning_uri(name=user.username, issuer_name='Auth app')
+    return jsonify(url=provisioning_url, id=user_id)  # use this data to make QR
 
 
 @bp.route("/sync/<string:user_id>", methods=["POST"])
-def sync(user_id: str):
+@validate_request(schema=schemas.SyncUser)
+def sync(data, user_id: str):
     """
     Requests totp code and verifies the user
     """
@@ -28,9 +31,9 @@ def sync(user_id: str):
     secret = user.totp_secret
     totp = pyotp.TOTP(secret)
     # Verify received code
-    code = request.form['code']
+    code = data.pop("code")
     if not totp.verify(code):
-        return 'Неверный код'
+        return jsonify(msg="Wrong code"), 401
     user.is_verified = True
     user.save()
     return auth_user(user)

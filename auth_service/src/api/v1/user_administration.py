@@ -59,10 +59,10 @@ def sign_in(data):
     if not user or not user.check_password(data["password"]):
         return unauthorized("Unauthorized")
 
-    if user.is_active_2FA:
+    if user.is_active_2fa:
         if not user.is_verified:
             return redirect(url_for('.initial_sync', user_id=user.id))
-        return render_template("check_totp.html", message="", id=user.id)
+        return jsonify(msg="You should submit 2fa code to /sync/<string:user_id>"), 301
 
     return auth_user(user)
 

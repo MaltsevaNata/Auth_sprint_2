@@ -10,6 +10,8 @@ class SignUpSchema(ma.Schema):
         required=True, load_only=True, validate=validate.Length(min=6, max=300)
     )
 
+class SyncUser(ma.Schema):
+    code = fields.String(required=True)
 
 class SignOutSchema(ma.Schema):
     refresh_token = fields.String(required=True)
@@ -30,7 +32,7 @@ class UpdateUserSchema(ma.Schema):
     email = fields.String(required=False)
     first_name = fields.String(required=False)
     last_name = fields.String(required=False)
-    is_active_2FA = fields.Boolean(required=False)
+    is_active_2fa = fields.Boolean(required=False)
 
 
 class UserSchema(ma.Schema):
