@@ -10,7 +10,7 @@ class GoogleUser(ModelTimeStamped):
     email = db.Column(db.String, unique=True, nullable=False)
     first_name = db.Column(db.String, nullable=True)
     last_name = db.Column(db.String, nullable=True)
-    user_id = db.Column(UUID(as_uuid=True), db.ForeignKey('user.id'), nullable=False)
+    user_id = db.Column(UUID(as_uuid=True), db.ForeignKey('user.id'), unique=True, nullable=False)
 
     def __repr__(self):
         return f"<Google User {self.email}>"
