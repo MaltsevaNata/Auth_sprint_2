@@ -85,11 +85,11 @@ class UserManager:
     schema_class = UserSchema
 
     @catch_validation_errors
-    def create_user(self, username, password, email):
+    def create_user(self, username, password, email, first_name=None, last_name=None):
 
-        self.schema_class().load(dict(username=username, email=email))
+        self.schema_class().load(dict(username=username, email=email, first_name=first_name, last_name=last_name))
 
-        user = self.model(username=username, email=email)
+        user = self.model(username=username, email=email, first_name=first_name, last_name=last_name)
         user.set_password(password)
         user.save()
 
