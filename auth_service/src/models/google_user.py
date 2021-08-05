@@ -7,7 +7,7 @@ from models.base import ModelTimeStamped
 class GoogleUser(ModelTimeStamped):
     __tablename__ = "google_user"
 
-    email = db.Column(db.String, nullable=False)
+    email = db.Column(db.String, unique=True, nullable=False)
     first_name = db.Column(db.String, nullable=True)
     last_name = db.Column(db.String, nullable=True)
     user_id = db.Column(UUID(as_uuid=True), db.ForeignKey('user.id'), nullable=False)
