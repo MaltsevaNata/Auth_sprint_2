@@ -45,6 +45,8 @@ def create_app(config_class=Config):
 
     from models.user import UserManager
     app.user_manager = UserManager()
+    from models.google_user import GoogleUserManager
+    app.google_user_manager = GoogleUserManager()
 
     from api.v1.utils import swagger_views
 
