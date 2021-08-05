@@ -44,27 +44,28 @@ def google_oauth2callback():
     ).execute()
     email = result['emailAddresses'][0]['value']
 
-    google_user = GoogleUser.query.filter_by(email=email).first()
+    google_user = current_app.google_user_manager.get_by_email(email)
     if not google_user:
         # ищем только того пользователя, у кого указан текущий гугловский email, username роли не играет
         user = current_app.user_manager.get_by_email(email)
         if not user:
             user = current_app.user_manager.create_user(
-                username=current_app.user_managet.generate_username(size=Config.MOCK_USERNAME_LENGTH),
+                username=current_app.user_manager.generate_username(size=Config.MOCK_USERNAME_LENGTH),
                 password=current_app.user_manager.generate_password(size=Config.MOCK_PASSWORD_LENGTH),
-                email=email
+                email=email,
+                first_name=result['names'][0]['givenName'],
+                last_name=result['names'][0]['familyName']
             )
-            user.first_name = result['names'][0]['givenName']
-            user.last_name = result['names'][0]['familyName']
             default_role = Role.query.filter_by(default=True).first()
             if default_role:
                 current_app.user_manager.add_role(user, default_role.name)
 
-        google_user = GoogleUser(email=user.email,
-                                 first_name=user.first_name,
-                                 last_name=user.last_name,
-                                 user_id=user.id)
-        google_user.save()
+        google_user = current_app.google_user_manager.create_google_user(
+            email=email,
+            first_name=result['names'][0]['givenName'],
+            last_name=result['names'][0]['familyName'],
+            user_id=user.id
+        )
 
     user = current_app.user_manager.get_by_id(google_user.user_id)
 
