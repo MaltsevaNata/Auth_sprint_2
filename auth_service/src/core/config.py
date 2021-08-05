@@ -35,6 +35,7 @@ class Config(object):
             'https://www.googleapis.com/auth/userinfo.email',
             'https://www.googleapis.com/auth/userinfo.profile'
         ]
+    MOCK_USERNAME_LENGTH: int = os.environ.get('MOCK_USERNAME_LENGTH', 8)
     MOCK_PASSWORD_LENGTH: int = os.environ.get('MOCK_PASSWORD_LENGTH', 64)
 
     # Leaky bucket

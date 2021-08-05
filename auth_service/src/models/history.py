@@ -17,7 +17,7 @@ def dump_datetime(value):
     return [value.strftime("%Y-%m-%d"), value.strftime("%H:%M:%S")]
 
 
-class LoginHistory:
+class LoginHistory(db.Model):
     __tablename__ = 'login_history_master'
     __table_args__ = (
         UniqueConstraint('id', 'user_id', name='login_history_id_user_id_unique'),

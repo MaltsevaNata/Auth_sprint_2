@@ -24,7 +24,6 @@ class User(ModelTimeStamped):
     is_active_2fa = db.Column(db.Boolean, default=False)
     is_verified = db.Column(db.Boolean, default=False)
     totp_secret = db.Column(db.String, nullable=True)
-    google_email = db.Column(db.String, nullable=True)
 
     def __repr__(self):
         return f"<User {self.username} {self.roles}>"
@@ -86,36 +85,14 @@ class UserManager:
     schema_class = UserSchema
 
     @catch_validation_errors
-    def create_user(self, username, password, email):
+    def create_user(self, username, password, email, first_name=None, last_name=None):
 
-        self.schema_class().load(dict(username=username, email=email))
+        self.schema_class().load(dict(username=username, email=email, first_name=first_name, last_name=last_name))
 
-        user = self.model(username=username, email=email)
+        user = self.model(username=username, email=email, first_name=first_name, last_name=last_name)
         user.set_password(password)
         user.save()
 
-        return user
-
-    def create_google_user(self, google_email, first_name, last_name):
-
-        self.schema_class().load(dict(
-            username=google_email,
-            email=google_email,
-            google_email=google_email,
-            first_name=first_name,
-            last_name=last_name
-        ))
-
-        user = self.model(
-            username=google_email,
-            email=google_email,
-            google_email=google_email,
-            first_name=first_name,
-            last_name=last_name
-        )
-        user.set_password(self.generate_password(size=Config.MOCK_PASSWORD_LENGTH))
-
-        user.save()
         return user
 
     @catch_validation_errors
@@ -154,8 +131,8 @@ class UserManager:
     def get_by_id(self, value):
         return self.model.query.filter_by(id=value).first()
 
-    def get_by_google_email(self, value):
-        return self.model.query.filter_by(google_email=value).first()
+    def generate_username(self, size, chars=string.ascii_letters + string.digits):
+        return 'user_' + ''.join(random.choice(chars) for _ in range(size))
 
     def generate_password(self, size, chars=string.ascii_letters + string.punctuation + string.digits):
         return ''.join(random.choice(chars) for _ in range(size))
